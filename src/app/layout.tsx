@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { Providers } from "./providers";
 
 import "@mantine/core/styles.css";
-import "./globals.css";
 import { ColorSchemeScript } from "@mantine/core";
-import { Providers } from "./providers";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Create Next App",
