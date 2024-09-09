@@ -1,26 +1,37 @@
 @import "@mantine/core/styles.css";
 
 @layer tailwind {
-    @tailwind base;
+	@tailwind base;
 }
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --primary-800: #193743;
-        --primary-400: #60b1d1;
-        --primary-200: #96defb;
-        --primary-200-rgb: 150, 222, 251;
-        --primary-100: #b5e5f8;
+	:root {
+		--primary-800: #193743;
+		--primary-400: #60b1d1;
+		--primary-200: #96defb;
+		--primary-200-rgb: 150, 222, 251;
+		--primary-100: #b5e5f8;
 
-        --secondary-400: #ffd25d;
+		--secondary-400: #ffd25d;
 
-        --accent-1: #bb5151;
-        --accent-2: #53c4d4;
-        --accent-3: #e1b74c;
-        --accent-4: #c76be8;
-        --accent-5: #d1c0db;
-        --accent-6: #82a6b5;
-    }
+		--accent-1: #bb5151;
+		--accent-2: #53c4d4;
+		--accent-3: #e1b74c;
+		--accent-4: #c76be8;
+		--accent-5: #d1c0db;
+		--accent-6: #82a6b5;
+	}
+}
+
+@layer components {
+	@keyframes sliding {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-342rem);
+		}
+	}
 }

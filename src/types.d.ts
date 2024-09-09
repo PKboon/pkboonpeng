@@ -11,3 +11,8 @@ export type ReferrerObject = {
 	relationship: string;
 	image: string;
 };
+
+export type SkillObject = {
+	label: string;
+	type: string;
+};
