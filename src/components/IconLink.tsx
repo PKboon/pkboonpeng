@@ -20,6 +20,8 @@ export default function IconLink({
 					href={link.href}
 					className={props.className}
 					variant="transparent"
+					target="_blank"
+					{...props}
 				>
 					<Icon name={link.icon} className={iconClasses} />
 				</ActionIcon>

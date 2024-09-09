@@ -1,4 +1,4 @@
-import ProjectItem from "@/components/ProjectItem";
+import ProjectSection from "@/components/ProjectComponents/ProjectSection";
 import RecommendationCard from "@/components/RecommendationCard";
 import { ReferrerObject } from "@/types";
 
@@ -11,21 +11,7 @@ export default function Home() {
 	};
 	return (
 		<div className="flex gap-4">
-			<ProjectItem
-				category="Website"
-				name="PK Portfolio"
-				links={[{ href: "", icon: "github", tooltip: "Go to GitHub" }]}
-				tags={[
-					"Figma",
-					"Next.js",
-					"Typescript",
-					"Mantine",
-					"Tailwind",
-					"Bun",
-					"Docker",
-				]}
-			/>
-
+			<ProjectSection />
 			<RecommendationCard referrer={referrer}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 				eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -1,6 +1,6 @@
 export type LinkObject = {
 	href: string;
-	icon: "github" | "figma" | "web" | "linkedin";
+	icon: "github" | "figma" | "web" | "linkedin" | "drive";
 	tooltip?: string;
 	label?: string;
 };
@@ -15,4 +15,12 @@ export type ReferrerObject = {
 export type SkillObject = {
 	label: string;
 	type: string;
+};
+
+export type ProjectObject = {
+	id: string;
+	category: string;
+	name: string;
+	links: LinkObject[];
+	tags: string[];
 };
