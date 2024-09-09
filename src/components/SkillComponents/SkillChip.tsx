@@ -1,15 +1,15 @@
 import { ComponentProps } from "react";
 
-export type GlowSkillChipProps = {
+export type SkillChipProps = {
 	label: string;
 	type: string;
 };
 
-export default function GlowSkillChip({
+export default function SkillChip({
 	label,
 	type,
 	...props
-}: GlowSkillChipProps & ComponentProps<"div">) {
+}: SkillChipProps & ComponentProps<"div">) {
 	const color = () => {
 		switch (type) {
 			case "tool":

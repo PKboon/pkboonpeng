@@ -1,5 +1,5 @@
 import { SkillObject } from "@/types";
-import GlowSkillChip from "./GlowSkillChip";
+import SkillChip from "./SkillChip";
 import InfiniteSlidingLoop from "./InfiniteSlidingLoop";
 
 export default function SkillSection() {
@@ -52,10 +52,7 @@ export default function SkillSection() {
 				>
 					{row.map((item, chipIndex) => (
 						<div key={`skill-chip-${chipIndex + rowIndex}`}>
-							<GlowSkillChip
-								label={item.label}
-								type={item.type}
-							/>
+							<SkillChip label={item.label} type={item.type} />
 						</div>
 					))}
 				</InfiniteSlidingLoop>
