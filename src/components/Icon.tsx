@@ -1,20 +1,18 @@
 import { ComponentProps } from "react";
 
 export type IconProps = {
-    name: string;
-    color: string;
+	name: string;
 };
 
 export default function Icon({
-    name,
-    color,
-    ...props
+	name,
+	...props
 }: IconProps & ComponentProps<"svg">) {
-    return (
-        <>
-            <svg {...props}>
-                <use href={`icons.svg#${name}`} className={`text-${color}`} />
-            </svg>
-        </>
-    );
+	return (
+		<>
+			<svg {...props}>
+				<use href={`icons.svg#${name}`} className={props.className} />
+			</svg>
+		</>
+	);
 }
