@@ -11,7 +11,10 @@ export default function Icon({
 	return (
 		<>
 			<svg {...props}>
-				<use href={`icons.svg#${name}`} className={props.className} />
+				<use
+					href={`icons.svg#${name}`}
+					className={`h-6 w-6 ${props.className}`}
+				/>
 			</svg>
 		</>
 	);

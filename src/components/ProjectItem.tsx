@@ -1,5 +1,5 @@
 import { LinkObject } from "@/types";
-import { Card, Group, Title } from "@mantine/core";
+import { Group, Title } from "@mantine/core";
 import IconLink from "./IconLink";
 import Tag from "./Tag";
 
@@ -18,7 +18,7 @@ export default function ProjectItem({
 }: ProjectItemProps) {
 	return (
 		<>
-			<Card className="items-center bg-transparent gap-1.5">
+			<div className="flex flex-col items-center bg-transparent gap-1.5">
 				<Title order={6} className="text-xs text-primary-200 w-fit">
 					{category}
 				</Title>
@@ -30,7 +30,7 @@ export default function ProjectItem({
 						<IconLink
 							link={link}
 							key={`link-${index}-${name.replaceAll(" ", "")}`}
-							iconClasses="text-accent-5 h-6 w-6"
+							iconClasses="text-accent-5"
 						/>
 					))}
 				</Group>
@@ -42,7 +42,7 @@ export default function ProjectItem({
 						/>
 					))}
 				</Group>
-			</Card>
+			</div>
 		</>
 	);
 }
