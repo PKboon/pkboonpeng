@@ -1,17 +1,17 @@
+import { SkillObject } from "@/types";
 import { ComponentProps } from "react";
 
 export type SkillChipProps = {
-	label: string;
-	type: string;
+	skill: SkillObject;
 };
 
 export default function SkillChip({
-	label,
-	type,
+	skill,
+	className,
 	...props
 }: SkillChipProps & ComponentProps<"div">) {
 	const color = () => {
-		switch (type) {
+		switch (skill.type) {
 			case "tool":
 				return "accent-1";
 			case "plugin":
@@ -33,7 +33,7 @@ export default function SkillChip({
 		<>
 			<div
 				{...props}
-				className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ms-4`}
+				className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ms-4 ${className}`}
 				style={{
 					borderColor: styles.color,
 					boxShadow: `${styles.borderGlow} ${styles.color}, inset ${styles.borderGlow} ${styles.color}`,
@@ -41,7 +41,7 @@ export default function SkillChip({
 					textShadow: `${styles.color} ${styles.textGlow}`,
 				}}
 			>
-				{label}
+				{skill.label}
 			</div>
 		</>
 	);

@@ -4,6 +4,7 @@ import { ReferrerObject } from "@/types";
 
 export default function Home() {
 	const referrer: ReferrerObject = {
+		id: "referrer1",
 		name: "Mychal Chin",
 		position: "VP of Professional Services at Sharpen",
 		relationship: "Managed PK directly",

@@ -1,10 +1,11 @@
+import { TagObject } from "@/types";
 import { Pill, PillProps } from "@mantine/core";
 
 export type TagProps = {
-	label: string;
+	tag: TagObject;
 } & PillProps;
 
-export default function Tag({ label, className, ...props }: TagProps) {
+export default function Tag({ tag, className, ...props }: TagProps) {
 	return (
 		<Pill
 			{...props}
@@ -12,7 +13,7 @@ export default function Tag({ label, className, ...props }: TagProps) {
 			style={{ backgroundColor: "rgba(var(--primary-200-rgb), .2)" }}
 			size="sm"
 		>
-			{label}
+			{tag.label}
 		</Pill>
 	);
 }

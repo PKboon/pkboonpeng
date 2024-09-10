@@ -6,6 +6,7 @@ export type IconProps = {
 
 export default function Icon({
 	name,
+	className,
 	...props
 }: IconProps & ComponentProps<"svg">) {
 	return (
@@ -13,7 +14,7 @@ export default function Icon({
 			<svg {...props}>
 				<use
 					href={`icons.svg#${name}`}
-					className={`h-6 w-6 ${props.className}`}
+					className={`h-6 w-6 ${className}`}
 				/>
 			</svg>
 		</>
