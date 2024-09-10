@@ -12,7 +12,7 @@
 		--primary-400: #60b1d1;
 		--primary-200: #96defb;
 		--primary-200-rgb: 150, 222, 251;
-		--primary-100: #b5e5f8;
+		--primary-100: #c7eaf8;
 
 		--secondary-400: #ffd25d;
 
@@ -34,4 +34,18 @@
 			transform: translateX(-342rem);
 		}
 	}
+}
+
+/* Overrise Mantine */
+.mantine-Timeline-itemBullet {
+	background-color: var(--primary-100);
+	border-color: var(--primary-100);
+}
+
+.mantine-Timeline-item {
+	padding-inline-start: 1rem !important;
+}
+
+.mantine-Timeline-item::before {
+	border-color: var(--primary-100);
 }

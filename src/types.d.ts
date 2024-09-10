@@ -35,3 +35,12 @@ export type TagObject = {
 	id: string;
 	label: string;
 };
+
+export type ExperienceObject = {
+	id: string;
+	logo: string;
+	company: string;
+	location: string;
+	position: string;
+	period: string;
+};
