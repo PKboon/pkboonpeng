@@ -3,6 +3,7 @@ import { ComponentProps, useEffect, useRef } from "react";
 export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
 };
+
 export default function InfiniteSlidingLoop({
 	children,
 	...props

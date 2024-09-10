@@ -1,5 +1,7 @@
 import { ReferrerObject } from "@/types";
-import { Avatar, Card, Flex } from "@mantine/core";
+import { Avatar, Card, Flex, Text } from "@mantine/core";
+import { IconLink } from "@/components";
+
 export type ReferrerCardProps = {
 	referrer: ReferrerObject;
 	children: React.ReactNode;
@@ -33,9 +35,27 @@ export default function ReferrerCard({
 					</div>
 				</Flex>
 
-				<span className="text-primary-200 opacity-70 text-sm leading-6 whitespace-pre-line">
+				<Text
+					className="text-primary-200 opacity-70 text-sm leading-6 whitespace-pre-line"
+					lineClamp={16}
+				>
 					{children}
-				</span>
+				</Text>
+
+				<div className="flex justify-end items-center gap-.5">
+					<span className="font-bold text-xs text-primary-200 opacity-30">
+						See more on{" "}
+					</span>
+					<IconLink
+						link={{
+							id: `link${referrer.id}`,
+							href: "https://www.linkedin.com/in/pkboon/",
+							icon: "linkedin",
+							tooltip: "Go to Linkedin",
+						}}
+						className="text-primary-200 opacity-40 w-8 h-8"
+					/>
+				</div>
 			</Card>
 		</>
 	);

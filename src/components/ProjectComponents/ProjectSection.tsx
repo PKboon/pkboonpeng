@@ -1,5 +1,6 @@
 import { ProjectObject } from "@/types";
-import ProjectItem from "./ProjectItem";
+import { ProjectItem } from "@/components";
+import { Group } from "@mantine/core";
 
 export default function ProjectSection() {
 	const projects: ProjectObject[] = [
@@ -129,10 +130,13 @@ export default function ProjectSection() {
 		},
 	];
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-x-28 gap-y-16 h-fit">
-			{projects.map((project) => (
-				<ProjectItem project={project} key={project.id} />
-			))}
-		</div>
+		<Group className="flex flex-col gap-y-14">
+			<div className="text-4xl text-primary-100 font-bold">Projects</div>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-x-28 gap-y-16 h-fit">
+				{projects.map((project) => (
+					<ProjectItem project={project} key={project.id} />
+				))}
+			</div>
+		</Group>
 	);
 }

@@ -26,7 +26,7 @@ export default function RootLayout({
 				/>
 				<ColorSchemeScript />
 			</head>
-			<body>
+			<body className="bg-primary-800">
 				<Providers>{children}</Providers>
 			</body>
 		</html>

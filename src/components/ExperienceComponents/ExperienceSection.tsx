@@ -1,8 +1,8 @@
 "use client";
 
 import { ExperienceObject } from "@/types";
-import { Space, Timeline, Title } from "@mantine/core";
-import ExperienceItem from "./ExperienceItem";
+import { Group, Space, Timeline, Title } from "@mantine/core";
+import { ExperienceItem } from "@/components";
 
 export default function ExperienceSection() {
 	const experience: ExperienceObject[] = [
@@ -48,7 +48,10 @@ export default function ExperienceSection() {
 		);
 	};
 	return (
-		<>
+		<Group className="flex flex-col gap-y-14">
+			<div className="text-4xl text-primary-100 font-bold">
+				Experience
+			</div>
 			<Timeline bulletSize={64} active={1} color="var(--primary-100)">
 				<ExperienceItem experience={experience[3]}>
 					<span className="text-sm text-primary-200 opacity-80">
@@ -254,6 +257,6 @@ export default function ExperienceSection() {
 					</span>
 				</ExperienceItem>
 			</Timeline>
-		</>
+		</Group>
 	);
 }

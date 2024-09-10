@@ -1,8 +1,8 @@
 "use client";
 
 import { ReferrerObject } from "@/types";
-import ReferrerCard from "./ReferrerCard";
-import { Flex, ScrollArea } from "@mantine/core";
+import { ReferrerCard } from "@/components";
+import { Flex, Group, ScrollArea } from "@mantine/core";
 
 export default function ReferrerSection() {
 	const referrers: ReferrerObject[] = [
@@ -114,7 +114,10 @@ export default function ReferrerSection() {
 		},
 	];
 	return (
-		<>
+		<Group>
+			<div className="text-4xl text-primary-100 font-bold mx-auto mb-4">
+				Referrers
+			</div>
 			<ScrollArea scrollbars="x" type="always" offsetScrollbars>
 				<Flex className="gap-6 px-6">
 					{referrers.map((referrer) => (
@@ -124,6 +127,6 @@ export default function ReferrerSection() {
 					))}
 				</Flex>
 			</ScrollArea>
-		</>
+		</Group>
 	);
 }

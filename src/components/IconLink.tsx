@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconProps, Tooltip } from "@mantine/core";
-import Icon from "./Icon";
+import { Icon } from "@/components";
 import { LinkObject } from "@/types";
 
 export type IconLinkProps = {

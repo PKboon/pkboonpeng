@@ -1,7 +1,6 @@
 import { ProjectObject } from "@/types";
 import { Group, Title } from "@mantine/core";
-import IconLink from "../IconLink";
-import Tag from "./Tag";
+import { IconLink, Tag } from "@/components";
 import { ComponentProps } from "react";
 
 export type ProjectItemProps = {

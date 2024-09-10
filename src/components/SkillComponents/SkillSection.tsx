@@ -1,6 +1,5 @@
 import { SkillObject } from "@/types";
-import SkillChip from "./SkillChip";
-import InfiniteSlidingLoop from "./InfiniteSlidingLoop";
+import { InfiniteSlidingLoop, SkillChip } from "@/components";
 
 export default function SkillSection() {
 	const rows: SkillObject[][] = [

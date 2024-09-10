@@ -1,14 +1,26 @@
 "use client";
 
-import ExperienceSection from "@/components/ExperienceComponents/ExperienceSection";
-import ReferrerSection from "@/components/ReferrerComponents/ReferrerSection";
+import {
+	SkillSection,
+	ProjectSection,
+	ExperienceSection,
+	ReferrerSection,
+	HeaderSection,
+} from "@/components";
 
 export default function Home() {
 	return (
-		<div>
-			{/* <ProjectSection /> */}
-			{/* <ReferrerSection /> */}
-			<ExperienceSection />
-		</div>
+		<>
+			<HeaderSection />
+
+			<div className="pb-48 relative -top-11">
+				<SkillSection />
+			</div>
+			<div className="flex flex-col gap-y-48">
+				<ProjectSection />
+				<ExperienceSection />
+				<ReferrerSection />
+			</div>
+		</>
 	);
 }
