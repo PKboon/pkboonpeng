@@ -54,9 +54,9 @@ export default function SkillSection() {
 					className="h-11"
 					key={`skillrow${rowIndex}`}
 				>
-					{row.map((item) => (
-						<div key={item.id}>
-							<SkillChip label={item.label} type={item.type} />
+					{row.map((skill) => (
+						<div key={skill.id}>
+							<SkillChip skill={skill} />
 						</div>
 					))}
 				</InfiniteSlidingLoop>
