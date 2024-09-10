@@ -1,6 +1,6 @@
 "use client";
 
-import { Anchor, Button, Center, Flex, Tooltip } from "@mantine/core";
+import { Anchor, Button, Flex, Tooltip } from "@mantine/core";
 import { IconLink } from "@/components";
 import { LinkObject } from "@/types";
 
@@ -51,6 +51,7 @@ export function TopBar() {
 							<IconLink
 								link={link}
 								className="text-primary-400 hover:text-primary-400"
+								key={link.id}
 							/>
 						))}
 						<Tooltip label="View resume">

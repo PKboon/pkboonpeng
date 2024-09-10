@@ -74,9 +74,9 @@ export function ExperienceSection() {
 						</span>
 						<Space />
 						<span>
-							- Connect user interface with clients' IBM Maximo
-							accounts, enabling data integration from their
-							database
+							- Connect user interface with clients&apos; IBM
+							Maximo accounts, enabling data integration from
+							their database
 						</span>
 						<Space />
 						<span>
@@ -194,7 +194,7 @@ export function ExperienceSection() {
 						<span>
 							- Created an{" "}
 							{renderedHighLightedKey("SMS Bot demo")} using
-							Dialogflow and Plum's APIs
+							Dialogflow and Plum&apos;s APIs
 						</span>
 						<Space />
 						<span>

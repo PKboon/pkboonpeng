@@ -1,11 +1,19 @@
+"use client";
+
 import { ComponentProps, useEffect, useRef } from "react";
 
 export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
+	slidingKeyframeName: string;
+	widthProperty: string;
+	speed?: number;
 };
 
 export function InfiniteSlidingLoop({
 	children,
+	slidingKeyframeName,
+	widthProperty,
+	speed = 20,
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
@@ -20,13 +28,18 @@ export function InfiniteSlidingLoop({
 			requestAnimationFrame(() => {
 				const contentWidth = content.scrollWidth;
 
+				content.style.setProperty(
+					`${widthProperty}`,
+					`-${contentWidth}px`
+				);
+
 				// Duplicate the content
 				content.innerHTML += content.innerHTML;
-				content.style.width = `${contentWidth * 2}px`; // Adjust width for double content
+				content.style.width = content.innerHTML; // Adjust width for double content
 
 				// Set up the animation
-				const animationDuration = contentWidth / 30 + "s";
-				content.style.animation = `sliding ${animationDuration} linear infinite`;
+				const animationDuration = contentWidth / speed + "s";
+				content.style.animation = `${slidingKeyframeName} ${animationDuration} linear infinite`;
 			});
 		}
 	}, []);

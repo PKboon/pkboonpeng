@@ -25,17 +25,32 @@
 	}
 }
 
-@layer components {
-	@keyframes sliding {
-		from {
-			transform: translateX(0);
-		}
-		to {
-			transform: translateX(-342rem);
-		}
+@keyframes skill-row-1-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--skill-row-1-w));
 	}
 }
 
+@keyframes skill-row-2-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--skill-row-2-w));
+	}
+}
+
+@keyframes skill-row-3-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--skill-row-3-w));
+	}
+}
 /* Overrise Mantine */
 .mantine-Timeline-itemBullet {
 	background-color: var(--primary-100);
