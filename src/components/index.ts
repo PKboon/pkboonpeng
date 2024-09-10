@@ -20,6 +20,7 @@ import { SkillSection } from "./SkillComponents/SkillSection";
 import { Icon, IconProps } from "./Icon";
 import { IconLink, IconLinkProps } from "./IconLink";
 import { HomeSection } from "./HomeSection";
+import { TopBar } from "./TopBar";
 
 export {
 	ExperienceItem,
@@ -35,6 +36,7 @@ export {
 	Icon,
 	IconLink,
 	HomeSection,
+	TopBar,
 };
 export type {
 	ExperienceItemProps,

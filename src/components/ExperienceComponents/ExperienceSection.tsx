@@ -11,7 +11,7 @@ export function ExperienceSection() {
 			logo: "/images/chim.png",
 			company: "Chim Media (Startup)",
 			location: "New York, NY - Remote (Part-time)",
-			position: "Frontend Team Lead",
+			position: "Front-end Team Lead",
 			period: "Aug 2020 - Jan 2021",
 		},
 		{
@@ -48,11 +48,11 @@ export function ExperienceSection() {
 		);
 	};
 	return (
-		<Group className="flex flex-col gap-y-14">
+		<Group className="flex flex-col gap-y-14 px-4" id="experience">
 			<div className="text-4xl text-primary-100 font-bold">
 				Experience
 			</div>
-			<Timeline bulletSize={64} active={1} color="var(--primary-100)">
+			<Timeline bulletSize={56} active={1} color="var(--primary-100)">
 				<ExperienceItem experience={experience[3]}>
 					<span className="text-sm text-primary-200 opacity-80">
 						<span>

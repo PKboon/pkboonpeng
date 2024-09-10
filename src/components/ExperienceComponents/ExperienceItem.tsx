@@ -16,7 +16,7 @@ export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 					<Image
 						src={experience.logo}
 						alt={experience.company}
-						className="p-2.5"
+						className="p-2"
 					/>
 				}
 				className="max-w-[42.25rem]"

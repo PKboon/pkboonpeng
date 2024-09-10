@@ -3,7 +3,7 @@ import { Center, Title } from "@mantine/core";
 export function HomeSection() {
 	return (
 		<>
-			<Center className="flex flex-col h-screen mx-auto gap-4 max-w-[18.75rem] sm:max-w-[30.75rem]">
+			<Center className="flex flex-col h-screen mx-auto gap-4 max-w-[18.75rem] sm:max-w-[30.75rem] mt-0 sm:-mt-5 ">
 				<Title
 					order={1}
 					className="text-primary-100 text-center text-5xl sm:text-[5rem]"
