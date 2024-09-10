@@ -107,12 +107,12 @@ export function ExperienceSection() {
 							using {renderedHighLightedKey("Figma")},{" "}
 							{renderedHighLightedKey("React")},{" "}
 							{renderedHighLightedKey("Typescript")},{" "}
-							{renderedHighLightedKey("Storybook")}
-							and {renderedHighLightedKey("Bootstrap")}
+							{renderedHighLightedKey("Storybook")} and{" "}
+							{renderedHighLightedKey("Bootstrap")}
 						</span>
 						<Space />
 						<span>
-							- Introduced Figma to the company and created a
+							- Introduced Figma to the company and created a{" "}
 							{renderedHighLightedKey("Design System")} to unify
 							the UI/UX
 						</span>
@@ -162,7 +162,7 @@ export function ExperienceSection() {
 							{renderedHighLightedKey("Vue.js")},{" "}
 							{renderedHighLightedKey("AngularJS")},{" "}
 							{renderedHighLightedKey("Laravel")},{" "}
-							{renderedHighLightedKey("Axios")}, and
+							{renderedHighLightedKey("Axios")}, and{" "}
 							{renderedHighLightedKey("Node.js")}
 						</span>
 						<Space />
@@ -175,7 +175,7 @@ export function ExperienceSection() {
 						</span>
 						<Space />
 						<span>
-							- Built the internal tool web app by utilizing
+							- Built the internal tool web app by utilizing{" "}
 							{renderedHighLightedKey("Axios")},{" "}
 							{renderedHighLightedKey("MySQL")} and{" "}
 							{renderedHighLightedKey("Laravel")} for permission
@@ -183,10 +183,9 @@ export function ExperienceSection() {
 						</span>
 						<Space />
 						<span>
-							- Initiated a Node.js app that connects CPaaS
+							- Initiated a Node.js app that connects CPaaS{" "}
 							{renderedHighLightedKey("Jambonz")} and{" "}
-							{renderedHighLightedKey("Dialogflow")}
-							to create an{" "}
+							{renderedHighLightedKey("Dialogflow")} to create an{" "}
 							{renderedHighLightedKey(
 								"AI voice application demo"
 							)}
@@ -209,8 +208,8 @@ export function ExperienceSection() {
 							- Developed a data analysis Vue.js web app that
 							displays statistical charts using{" "}
 							{renderedHighLightedKey("ApexCharts")},{" "}
-							{renderedHighLightedKey("D3.js")}
-							and {renderedHighLightedKey("Mermaid.js")}
+							{renderedHighLightedKey("D3.js")} and{" "}
+							{renderedHighLightedKey("Mermaid.js")}
 						</span>
 						<Space />
 						<span>

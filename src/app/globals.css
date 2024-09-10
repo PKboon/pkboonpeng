@@ -43,7 +43,7 @@
 }
 
 .mantine-Timeline-item {
-	padding-inline-start: 1rem !important;
+	padding-inline-start: 1.25rem !important;
 }
 
 .mantine-Timeline-item::before {

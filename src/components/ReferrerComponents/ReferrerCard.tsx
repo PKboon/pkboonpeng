@@ -41,7 +41,7 @@ export function ReferrerCard({ referrer, children }: ReferrerCardProps) {
 
 				<div className="flex justify-end items-center gap-.5">
 					<span className="font-bold text-xs text-primary-200 opacity-30">
-						See more on{" "}
+						Read more on{" "}
 					</span>
 					<IconLink
 						link={{

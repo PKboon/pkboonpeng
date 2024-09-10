@@ -115,9 +115,6 @@ export function ReferrerSection() {
 	];
 	return (
 		<Group>
-			<div className="text-4xl text-primary-100 font-bold mx-auto mb-4">
-				Referrers
-			</div>
 			<ScrollArea scrollbars="x" type="always" offsetScrollbars>
 				<Flex className="gap-6 px-6">
 					{referrers.map((referrer) => (
