@@ -4,7 +4,7 @@ import { ReferrerObject } from "@/types";
 import { ReferrerCard } from "@/components";
 import { Flex, Group, ScrollArea } from "@mantine/core";
 
-export default function ReferrerSection() {
+export function ReferrerSection() {
 	const referrers: ReferrerObject[] = [
 		{
 			id: "referrer1",

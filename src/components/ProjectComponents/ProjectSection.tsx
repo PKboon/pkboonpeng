@@ -2,7 +2,7 @@ import { ProjectObject } from "@/types";
 import { ProjectItem } from "@/components";
 import { Group } from "@mantine/core";
 
-export default function ProjectSection() {
+export function ProjectSection() {
 	const projects: ProjectObject[] = [
 		{
 			id: "project1",

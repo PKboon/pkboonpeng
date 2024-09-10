@@ -7,7 +7,7 @@ export type ProjectItemProps = {
 	project: ProjectObject;
 };
 
-export default function ProjectItem({
+export function ProjectItem({
 	project,
 	className,
 	...props

@@ -4,7 +4,7 @@ export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
 };
 
-export default function InfiniteSlidingLoop({
+export function InfiniteSlidingLoop({
 	children,
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {

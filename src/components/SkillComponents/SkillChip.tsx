@@ -5,7 +5,7 @@ export type SkillChipProps = {
 	skill: SkillObject;
 };
 
-export default function SkillChip({
+export function SkillChip({
 	skill,
 	className,
 	...props

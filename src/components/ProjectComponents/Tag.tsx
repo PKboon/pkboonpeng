@@ -5,7 +5,7 @@ export type TagProps = {
 	tag: TagObject;
 } & PillProps;
 
-export default function Tag({ tag, className, ...props }: TagProps) {
+export function Tag({ tag, className, ...props }: TagProps) {
 	return (
 		<Pill
 			{...props}

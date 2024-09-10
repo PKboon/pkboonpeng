@@ -7,7 +7,7 @@ export type IconLinkProps = {
 	iconClasses?: string;
 };
 
-export default function IconLink({
+export function IconLink({
 	link,
 	iconClasses,
 	...props

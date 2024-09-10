@@ -8,10 +8,7 @@ export type ExperienceItemProps = {
 	experience: ExperienceObject;
 };
 
-export default function ExperienceItem({
-	children,
-	experience,
-}: ExperienceItemProps) {
+export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 	return (
 		<>
 			<Timeline.Item

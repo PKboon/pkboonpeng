@@ -4,7 +4,7 @@ export type IconProps = {
 	name: string;
 };
 
-export default function Icon({
+export function Icon({
 	name,
 	className,
 	...props

@@ -4,7 +4,7 @@ import { ExperienceObject } from "@/types";
 import { Group, Space, Timeline, Title } from "@mantine/core";
 import { ExperienceItem } from "@/components";
 
-export default function ExperienceSection() {
+export function ExperienceSection() {
 	const experience: ExperienceObject[] = [
 		{
 			id: "experience1",

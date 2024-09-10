@@ -7,10 +7,7 @@ export type ReferrerCardProps = {
 	children: React.ReactNode;
 };
 
-export default function ReferrerCard({
-	referrer,
-	children,
-}: ReferrerCardProps) {
+export function ReferrerCard({ referrer, children }: ReferrerCardProps) {
 	return (
 		<>
 			<Card

@@ -5,13 +5,13 @@ import {
 	ProjectSection,
 	ExperienceSection,
 	ReferrerSection,
-	HeaderSection,
+	HomeSection,
 } from "@/components";
 
 export default function Home() {
 	return (
 		<>
-			<HeaderSection />
+			<HomeSection />
 
 			<div className="pb-48 relative -top-11">
 				<SkillSection />

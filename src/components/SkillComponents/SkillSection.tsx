@@ -1,7 +1,7 @@
 import { SkillObject } from "@/types";
 import { InfiniteSlidingLoop, SkillChip } from "@/components";
 
-export default function SkillSection() {
+export function SkillSection() {
 	const rows: SkillObject[][] = [
 		[
 			{ id: "skill1", label: "Web development", type: "technical" },
