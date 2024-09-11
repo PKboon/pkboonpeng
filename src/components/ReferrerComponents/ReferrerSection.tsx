@@ -114,8 +114,13 @@ export function ReferrerSection() {
 		},
 	];
 	return (
-		<Group>
-			<ScrollArea scrollbars="x" type="always" offsetScrollbars>
+		<Group className="pb-20">
+			<ScrollArea
+				scrollbars="x"
+				type="hover"
+				className="py-6"
+				offsetScrollbars
+			>
 				<Flex className="gap-6 px-6">
 					{referrers.map((referrer) => (
 						<ReferrerCard referrer={referrer} key={referrer.id}>

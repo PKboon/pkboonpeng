@@ -26,7 +26,7 @@ export default function RootLayout({
 				/>
 				<ColorSchemeScript />
 			</head>
-			<body className="bg-primary-800">
+			<body className="bg-accent-6">
 				<Providers>{children}</Providers>
 			</body>
 		</html>

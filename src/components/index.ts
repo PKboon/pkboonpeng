@@ -21,6 +21,7 @@ import { Icon, IconProps } from "./Icon";
 import { IconLink, IconLinkProps } from "./IconLink";
 import { HomeSection } from "./HomeSection";
 import { TopBar } from "./TopBar";
+import { FooterSection } from "./FooterSection";
 
 export {
 	ExperienceItem,
@@ -37,6 +38,7 @@ export {
 	IconLink,
 	HomeSection,
 	TopBar,
+	FooterSection,
 };
 export type {
 	ExperienceItemProps,
