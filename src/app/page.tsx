@@ -7,20 +7,33 @@ import {
 	ReferrerSection,
 	HomeSection,
 	TopBar,
+	FooterSection,
 } from "@/components";
 
 export default function Home() {
 	return (
 		<>
-			<TopBar />
-			<HomeSection />
-			<div className="pb-48 relative -top-11 sm:-top-[4.75rem]">
-				<SkillSection />
+			<div className="bg-primary-800 mb-[25rem] sm:mb-[22rem]">
+				<TopBar />
+				<main
+					style={{
+						boxShadow:
+							"0 1.125rem 2.25rem -.75rem rgba(0, 0, 0, .4)",
+					}}
+				>
+					<HomeSection />
+					<div className="pb-48 relative -top-11 sm:-top-[4.75rem]">
+						<SkillSection />
+					</div>
+					<div className="flex flex-col gap-y-48">
+						<ProjectSection />
+						<ExperienceSection />
+						<ReferrerSection />
+					</div>
+				</main>
 			</div>
-			<div className="flex flex-col gap-y-48">
-				<ProjectSection />
-				<ExperienceSection />
-				<ReferrerSection />
+			<div className="fixed bottom-0 w-screen -z-10">
+				<FooterSection />
 			</div>
 		</>
 	);

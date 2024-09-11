@@ -21,7 +21,7 @@ export function TopBar() {
 	];
 	return (
 		<>
-			<div className="hidden sm:block py-3">
+			<nav className="hidden sm:block py-3">
 				<Flex
 					align="center"
 					justify="space-between"
@@ -66,7 +66,7 @@ export function TopBar() {
 						</Tooltip>
 					</Flex>
 				</Flex>
-			</div>
+			</nav>
 		</>
 	);
 }
