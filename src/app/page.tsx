@@ -13,7 +13,7 @@ import {
 export default function Home() {
 	return (
 		<>
-			<div className="bg-primary-800 mb-[25rem] sm:mb-[22rem]">
+			<div className="bg-primary-800 mb-[25rem] md:mb-[22rem]">
 				<TopBar />
 				<main
 					style={{
@@ -22,7 +22,7 @@ export default function Home() {
 					}}
 				>
 					<HomeSection />
-					<div className="pb-48 relative -top-11 sm:-top-[4.75rem]">
+					<div className="pb-48 relative -top-[6.35rem] sm:-top-[5.1rem]">
 						<SkillSection />
 					</div>
 					<div className="flex flex-col gap-y-48">

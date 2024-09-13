@@ -19,12 +19,17 @@ export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 						className="p-2"
 					/>
 				}
-				className="max-w-[42.25rem]"
+				className="max-w-[42.25rem] pb-8"
 			>
 				<div className="inline-flex flex-wrap items-baseline gap-x-1.5 gap-y-.5">
 					<Title order={5} className="text-base text-primary-200">
 						{experience.company}
 					</Title>
+					{experience.companyNote && (
+						<Text className="font-bold text-xs text-primary-200">
+							{experience.companyNote}
+						</Text>
+					)}
 					<Text className="text-xs text-primary-200">
 						{experience.location}
 					</Text>
