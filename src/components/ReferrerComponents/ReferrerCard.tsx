@@ -10,11 +10,7 @@ export type ReferrerCardProps = {
 export function ReferrerCard({ referrer, children }: ReferrerCardProps) {
 	return (
 		<>
-			<Card
-				className="gap-2.5 w-96 h-fit"
-				style={{ backgroundColor: "rgba(255, 255, 255, .2)" }}
-				radius="lg"
-			>
+			<Card className="gap-2.5 w-96 h-fit bg-primary-750" radius="lg">
 				<Flex align="start" className="gap-2">
 					<Avatar
 						src={referrer.image}
