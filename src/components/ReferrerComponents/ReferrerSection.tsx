@@ -114,7 +114,7 @@ export function ReferrerSection() {
 		},
 	];
 	return (
-		<Group className="pb-20">
+		<Group className="pb-10">
 			<ScrollArea
 				scrollbars="x"
 				type="hover"

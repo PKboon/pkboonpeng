@@ -1,24 +1,9 @@
 "use client";
 
 import { Anchor, Button, Flex, Tooltip } from "@mantine/core";
-import { IconLink } from "@/components";
-import { LinkObject } from "@/types";
+import { IconLink, socialLinks } from "@/components";
 
 export function TopBar() {
-	const links: LinkObject[] = [
-		{
-			id: "profile1",
-			href: "https://github.com/PKboon/",
-			icon: "github",
-			tooltip: "Go to GitHub",
-		},
-		{
-			id: "profile2",
-			href: "https://www.linkedin.com/in/pkboon/",
-			icon: "linkedin",
-			tooltip: "Go to LinkedIn",
-		},
-	];
 	return (
 		<Flex
 			align="center"
@@ -44,7 +29,7 @@ export function TopBar() {
 			</Tooltip>
 
 			<Flex align="center">
-				{links.map((link) => (
+				{socialLinks.map((link) => (
 					<IconLink
 						link={link}
 						className="text-primary-400 hover:text-primary-400"

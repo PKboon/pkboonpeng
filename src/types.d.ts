@@ -44,4 +44,5 @@ export type ExperienceObject = {
 	location: string;
 	position: string;
 	period: string;
+	website: string;
 };

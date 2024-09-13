@@ -34,6 +34,7 @@ export function InfiniteSlidingLoop({
 				content.innerHTML += content.innerHTML;
 				content.style.width = content.innerHTML;
 
+				// Direction
 				content.style.setProperty(
 					`${widthProperty}`,
 					`${direction === "right" ? "" : "-"}${contentWidth}px`

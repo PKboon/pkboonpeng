@@ -10,16 +10,19 @@ export type ExperienceItemProps = {
 
 export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 	return (
-		<>
-			<Timeline.Item
-				bullet={
-					<Image
-						src={experience.logo}
-						alt={experience.company}
-						className="p-2"
-					/>
-				}
-				className="max-w-[42.25rem] pb-8"
+		<Timeline.Item
+			bullet={
+				<Image
+					src={experience.logo}
+					alt={experience.company}
+					className="p-2"
+				/>
+			}
+			className="max-w-[42.25rem] pb-3"
+		>
+			<div
+				className="hover:bg-primary-750 cursor-pointer rounded-2xl px-4 py-2"
+				onClick={() => window.open(`${experience.website}`, "_blank")}
 			>
 				<div className="inline-flex flex-wrap items-baseline gap-x-1.5 gap-y-.5">
 					<Title order={5} className="text-base text-primary-200">
@@ -40,8 +43,11 @@ export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 				<Text className="text-sm opacity-80 text-primary-200">
 					{experience.period}
 				</Text>
-				{children}
-			</Timeline.Item>
-		</>
+
+				<span className="text-sm text-primary-200 opacity-80">
+					{children}
+				</span>
+			</div>
+		</Timeline.Item>
 	);
 }

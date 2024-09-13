@@ -1,12 +1,12 @@
 "use client";
 
 import {
+	TopBar,
+	HeroSection,
 	SkillSection,
 	ProjectSection,
 	ExperienceSection,
 	ReferrerSection,
-	HomeSection,
-	TopBar,
 	FooterSection,
 } from "@/components";
 
@@ -21,7 +21,7 @@ export default function Home() {
 							"0 1.125rem 2.25rem -.75rem rgba(0, 0, 0, .4)",
 					}}
 				>
-					<HomeSection />
+					<HeroSection />
 					<div className="pb-16 relative -top-[6.35rem] sm:-top-[5.1rem]">
 						<SkillSection />
 					</div>
