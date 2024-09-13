@@ -48,7 +48,7 @@ export function InfiniteSlidingLoop({
 
 	return (
 		<div
-			className={`relative overflow-hidden py-2 ${props.className}`}
+			className={`relative overflow-hidden py-2.5 ${props.className}`}
 			ref={containerRef}
 		>
 			<div

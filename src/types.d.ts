@@ -40,6 +40,7 @@ export type ExperienceObject = {
 	id: string;
 	logo: string;
 	company: string;
+	companyNote?: string;
 	location: string;
 	position: string;
 	period: string;

@@ -26,6 +26,7 @@ export function ExperienceSection() {
 			id: "experience3",
 			logo: "/images/sharpen.png",
 			company: "Sharpen",
+			companyNote: "(formerly Plum Voice)",
 			location: "Indianapolis, IN - Remote",
 			position: "Software Engineer II",
 			period: "Oct 2023 - Mar 2024",
@@ -80,7 +81,7 @@ export function ExperienceSection() {
 						</span>
 						<Space />
 						<span>
-							- Work with the team to address and fix UI and UX
+							- Work with the team to isolate and fix UI and UX
 							issues, helping ensure smooth application
 							performance
 						</span>
@@ -88,16 +89,6 @@ export function ExperienceSection() {
 				</ExperienceItem>
 				<ExperienceItem experience={experience[2]}>
 					<span className="text-sm text-primary-200 opacity-80">
-						<span>
-							-{" "}
-							{renderedHighLightedKey(
-								"Transferred Plum Voice knowledge"
-							)}{" "}
-							by showing product {renderedHighLightedKey("demos")}{" "}
-							and sharing{" "}
-							{renderedHighLightedKey("documentation")}, after the
-							acquisition
-						</span>
 						<Space />
 						<span>
 							- Led the front-end team in developing a{" "}
@@ -183,7 +174,7 @@ export function ExperienceSection() {
 						</span>
 						<Space />
 						<span>
-							- Initiated a Node.js app that connects CPaaS{" "}
+							- Prototyped a Node.js app that connects CPaaS{" "}
 							{renderedHighLightedKey("Jambonz")} and{" "}
 							{renderedHighLightedKey("Dialogflow")} to create an{" "}
 							{renderedHighLightedKey(
