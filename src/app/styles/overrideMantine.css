@@ -1,0 +1,12 @@
+/* Timeline */
+.mantine-Timeline-itemBullet {
+	@apply bg-primary-100 border-primary-100;
+}
+
+.mantine-Timeline-item {
+	padding-inline-start: 1.25rem !important;
+}
+
+.mantine-Timeline-item::before {
+	@apply border-primary-100;
+}
