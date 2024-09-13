@@ -29,7 +29,6 @@ export function ProjectSection() {
 				{ id: "project1tag4", label: "Mantine" },
 				{ id: "project1tag5", label: "Tailwind" },
 				{ id: "project1tag6", label: "Bun" },
-				{ id: "project1tag7", label: "Docker" },
 			],
 		},
 		{

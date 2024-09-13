@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		siteName: "PK Boonpeng's portfolio",
 		images: [
 			{
-				url: "https://github.com/PKboon/pk-portfolio/blob/3-refactorclean-up-code/public/images/thumbnail.png",
+				url: "https://github.com/PKboon/pkboonpeng/blob/3-refactorclean-up-code/public/images/thumbnail.png",
 				alt: "PK Boonpeng' website",
 			},
 		],
