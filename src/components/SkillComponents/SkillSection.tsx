@@ -50,17 +50,15 @@ export function SkillSection() {
 		{
 			keyframeName: "skill-row-1-sliding",
 			widthProperty: "--skill-row-1-w",
-			speed: 100,
 		},
 		{
 			keyframeName: "skill-row-2-sliding",
 			widthProperty: "--skill-row-2-w",
-			speed: 110,
+			direction: "right",
 		},
 		{
 			keyframeName: "skill-row-3-sliding",
 			widthProperty: "--skill-row-3-w",
-			speed: 90,
 		},
 	];
 
@@ -72,8 +70,13 @@ export function SkillSection() {
 					key={`skillrow${rowIndex}`}
 					slidingKeyframeName={rowDetails[rowIndex].keyframeName}
 					widthProperty={rowDetails[rowIndex].widthProperty}
-					speed={rowDetails[rowIndex].speed}
+					direction={rowDetails[rowIndex]?.direction}
 				>
+					{row.map((skill) => (
+						<div key={skill.id}>
+							<SkillChip skill={skill} />
+						</div>
+					))}
 					{row.map((skill) => (
 						<div key={skill.id}>
 							<SkillChip skill={skill} />

@@ -7,13 +7,15 @@ export type InfiniteSlidingLoopProps = {
 	slidingKeyframeName: string;
 	widthProperty: string;
 	speed?: number;
+	direction?: string;
 };
 
 export function InfiniteSlidingLoop({
 	children,
 	slidingKeyframeName,
 	widthProperty,
-	speed = 20,
+	speed = 10,
+	direction = "left",
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
@@ -28,28 +30,33 @@ export function InfiniteSlidingLoop({
 			requestAnimationFrame(() => {
 				const contentWidth = content.scrollWidth;
 
-				content.style.setProperty(
-					`${widthProperty}`,
-					`-${contentWidth}px`
-				);
-
 				// Duplicate the content
 				content.innerHTML += content.innerHTML;
-				content.style.width = content.innerHTML; // Adjust width for double content
+				content.style.width = content.innerHTML;
+
+				content.style.setProperty(
+					`${widthProperty}`,
+					`${direction === "right" ? "" : "-"}${contentWidth}px`
+				);
 
 				// Set up the animation
 				const animationDuration = contentWidth / speed + "s";
 				content.style.animation = `${slidingKeyframeName} ${animationDuration} linear infinite`;
 			});
 		}
-	}, []);
+	}, [direction, slidingKeyframeName, speed, widthProperty]);
 
 	return (
 		<div
 			className={`relative overflow-hidden py-2 ${props.className}`}
 			ref={containerRef}
 		>
-			<div className="flex absolute" ref={contentRef}>
+			<div
+				className={`flex absolute ${
+					direction === "right" ? "right-4" : ""
+				}`}
+				ref={contentRef}
+			>
 				{children}
 			</div>
 		</div>
