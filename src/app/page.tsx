@@ -22,10 +22,10 @@ export default function Home() {
 					}}
 				>
 					<HomeSection />
-					<div className="pb-48 relative -top-[6.35rem] sm:-top-[5.1rem]">
+					<div className="pb-16 relative -top-[6.35rem] sm:-top-[5.1rem]">
 						<SkillSection />
 					</div>
-					<div className="flex flex-col gap-y-48">
+					<div className="flex flex-col gap-32">
 						<ProjectSection />
 						<ExperienceSection />
 						<ReferrerSection />

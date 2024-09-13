@@ -118,7 +118,7 @@ export function ReferrerSection() {
 			<ScrollArea
 				scrollbars="x"
 				type="hover"
-				className="py-6"
+				className="pb-6 -mt-6"
 				offsetScrollbars
 			>
 				<Flex className="gap-6 px-6">
