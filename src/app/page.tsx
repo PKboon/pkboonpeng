@@ -1,12 +1,12 @@
 "use client";
 
 import {
+	TopBar,
+	HeroSection,
 	SkillSection,
 	ProjectSection,
 	ExperienceSection,
 	ReferrerSection,
-	HeroSection,
-	TopBar,
 	FooterSection,
 } from "@/components";
 
