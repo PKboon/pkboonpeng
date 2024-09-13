@@ -130,7 +130,7 @@ export function ProjectSection() {
 		},
 	];
 	return (
-		<Group className="flex flex-col gap-y-14" id="projects">
+		<Group id="projects" className="flex flex-col gap-y-14">
 			<div className="text-4xl text-primary-100 font-bold">Projects</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-x-28 gap-y-16 h-fit">
 				{projects.map((project) => (
