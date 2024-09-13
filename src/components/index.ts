@@ -19,7 +19,7 @@ import { SkillChip, SkillChipProps } from "./SkillComponents/SkillChip";
 import { SkillSection } from "./SkillComponents/SkillSection";
 import { Icon, IconProps } from "./Icon";
 import { IconLink, IconLinkProps } from "./IconLink";
-import { HomeSection } from "./HomeSection";
+import { HeroSection } from "./HeroSection";
 import { TopBar } from "./TopBar";
 import { FooterSection } from "./FooterSection";
 
@@ -36,7 +36,7 @@ export {
 	SkillSection,
 	Icon,
 	IconLink,
-	HomeSection,
+	HeroSection,
 	TopBar,
 	FooterSection,
 };
