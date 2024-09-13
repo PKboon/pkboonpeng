@@ -30,19 +30,17 @@ export function SkillChip({
 	};
 
 	return (
-		<>
-			<div
-				{...props}
-				className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ms-4 ${className}`}
-				style={{
-					borderColor: styles.color,
-					boxShadow: `${styles.borderGlow} ${styles.color}, inset ${styles.borderGlow} ${styles.color}`,
-					color: styles.color,
-					textShadow: `${styles.color} ${styles.textGlow}`,
-				}}
-			>
-				{skill.label}
-			</div>
-		</>
+		<div
+			{...props}
+			className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ms-4 ${className}`}
+			style={{
+				borderColor: styles.color,
+				boxShadow: `${styles.borderGlow} ${styles.color}, inset ${styles.borderGlow} ${styles.color}`,
+				color: styles.color,
+				textShadow: `${styles.color} ${styles.textGlow}`,
+			}}
+		>
+			{skill.label}
+		</div>
 	);
 }
