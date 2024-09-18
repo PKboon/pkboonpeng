@@ -22,7 +22,7 @@ export default function Home() {
 					}}
 				>
 					<HeroSection />
-					<div className="pb-16 relative -top-[9.5rem] sm:-top-[8.25rem]">
+					<div className="pb-16 relative -top-[8.25rem] sm:-top-[7.25rem]">
 						<SkillSection />
 					</div>
 					<div className="flex flex-col gap-32">
