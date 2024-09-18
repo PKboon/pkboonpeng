@@ -7,13 +7,13 @@ export function TopBar() {
 	return (
 		<Flex
 			align="center"
-			className="w-screen py-3 justify-center sm:w-[30.75rem] sm:mx-auto sm:justify-between"
+			className="w-screen py-4 px-6 sticky top-0 sm:px-[13%] sm:mx-auto md:px-[27%] justify-between z-50 shadow backdrop-blur-xl"
 		>
 			<Tooltip label="Jump to Projects">
 				<Anchor
 					underline="never"
 					href="#projects"
-					className="text-primary-400 hidden sm:block"
+					className="text-primary-400"
 				>
 					Projects
 				</Anchor>
@@ -22,7 +22,7 @@ export function TopBar() {
 				<Anchor
 					underline="never"
 					href="#experience"
-					className="text-primary-400 hidden sm:block"
+					className="text-primary-400"
 				>
 					Experience
 				</Anchor>
