@@ -6,7 +6,7 @@ export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
 	slidingKeyframeName: string;
 	widthProperty: string;
-	speed?: number;
+	speed: number;
 	direction?: string;
 };
 
@@ -14,7 +14,7 @@ export function InfiniteSlidingLoop({
 	children,
 	slidingKeyframeName,
 	widthProperty,
-	speed = 10,
+	speed = 20,
 	direction = "left",
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {

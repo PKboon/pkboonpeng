@@ -18,11 +18,11 @@ export default function Home() {
 				<main
 					style={{
 						boxShadow:
-							"0 1.125rem 2.25rem -.75rem rgba(0, 0, 0, .4)",
+							"0 1.75rem 2.25rem -.75rem rgba(0, 0, 0, .3)",
 					}}
 				>
 					<HeroSection />
-					<div className="pb-16 relative -top-[6.35rem] sm:-top-[5.1rem]">
+					<div className="pb-16 relative -top-[9.5rem] sm:-top-[8.25rem]">
 						<SkillSection />
 					</div>
 					<div className="flex flex-col gap-32">

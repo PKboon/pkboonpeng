@@ -31,18 +31,20 @@ export function SkillSection() {
 			{ id: "skill19", label: "Axios", type: "plugin" },
 			{ id: "skill20", label: "Phpstorm", type: "tool" },
 			{ id: "skill21", label: "Postman", type: "tool" },
+			{ id: "skill22", label: "Angular", type: "langframe" },
+			{ id: "skill23", label: "Angular Material", type: "plugin" },
 		],
 		[
-			{ id: "skill22", label: "Adobe Creative Suite", type: "tool" },
-			{ id: "skill23", label: "VitePress", type: "plugin" },
-			{ id: "skill24", label: "DBeaver", type: "tool" },
-			{ id: "skill25", label: "MySQL", type: "langframe" },
-			{ id: "skill26", label: "ApexCharts", type: "plugin" },
-			{ id: "skill27", label: "Lucidchart", type: "tool" },
-			{ id: "skill28", label: "Trello", type: "tool" },
-			{ id: "skill29", label: "DynamoDB", type: "langframe" },
-			{ id: "skill30", label: "Database design", type: "technical" },
-			{ id: "skill31", label: "IntelliJ", type: "tool" },
+			{ id: "skill24", label: "Adobe Creative Suite", type: "tool" },
+			{ id: "skill25", label: "VitePress", type: "plugin" },
+			{ id: "skill26", label: "DBeaver", type: "tool" },
+			{ id: "skill27", label: "MySQL", type: "langframe" },
+			{ id: "skill28", label: "ApexCharts", type: "plugin" },
+			{ id: "skill29", label: "Lucidchart", type: "tool" },
+			{ id: "skill30", label: "Trello", type: "tool" },
+			{ id: "skill31", label: "DynamoDB", type: "langframe" },
+			{ id: "skill32", label: "Database design", type: "technical" },
+			{ id: "skill33", label: "IntelliJ", type: "tool" },
 		],
 	];
 
@@ -50,15 +52,18 @@ export function SkillSection() {
 		{
 			keyframeName: "skill-row-1-sliding",
 			widthProperty: "--skill-row-1-w",
+			speed: 22,
 		},
 		{
 			keyframeName: "skill-row-2-sliding",
 			widthProperty: "--skill-row-2-w",
+			speed: 17,
 			direction: "right",
 		},
 		{
 			keyframeName: "skill-row-3-sliding",
 			widthProperty: "--skill-row-3-w",
+			speed: 25,
 		},
 	];
 
@@ -70,6 +75,7 @@ export function SkillSection() {
 					key={`skillrow${rowIndex}`}
 					slidingKeyframeName={rowDetails[rowIndex].keyframeName}
 					widthProperty={rowDetails[rowIndex].widthProperty}
+					speed={rowDetails[rowIndex].speed}
 					direction={rowDetails[rowIndex]?.direction}
 				>
 					{row.map((skill) => (

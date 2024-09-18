@@ -8,6 +8,7 @@ export function TopBar() {
 		<Flex
 			align="center"
 			className="w-screen py-4 px-6 sticky top-0 sm:px-[13%] sm:mx-auto md:px-[27%] justify-between z-50 shadow backdrop-blur-xl"
+			style={{ backgroundColor: "rgba(var(--primary-800-rgb), .5)" }}
 		>
 			<Tooltip label="Jump to Projects">
 				<Anchor

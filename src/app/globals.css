@@ -10,6 +10,7 @@
 @layer base {
 	:root {
 		--primary-800: #193743;
+		--primary-800-rgb: 25, 55, 67;
 		--primary-750: #304b56;
 		--primary-400: #60b1d1;
 		--primary-200: #96defb;
