@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 	],
 	openGraph: {
 		type: "website",
-		url: "https://pkboon.github.io/pkboonpeng",
+		url: "https://www.pkboonpeng.com/",
 		title: "PK Boonpeng",
 		description:
 			"PK Boonpeng's portfolio | Front-end Software Engineer and UI/UX Designer",
@@ -54,11 +54,6 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<meta charSet="UTF-8" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0"
-				/>
 				<meta name="googlebot" content="notranslate" />
 				<ColorSchemeScript />
 			</head>
