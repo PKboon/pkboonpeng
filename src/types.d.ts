@@ -1,5 +1,3 @@
-import React from "react";
-
 export type LinkObject = {
 	id: string;
 	href: string;

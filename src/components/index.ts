@@ -1,5 +1,5 @@
 import { LinkObject } from "@/types";
-const socialLinks: LinkObject[] = [
+export const socialLinks: LinkObject[] = [
 	{
 		id: "social1",
 		href: "https://github.com/PKboon/",
@@ -14,57 +14,14 @@ const socialLinks: LinkObject[] = [
 	},
 ];
 
-import { TopBar } from "./TopBar";
-import { HeroSection } from "./HeroSection";
-import {
-	InfiniteSlidingLoop,
-	InfiniteSlidingLoopProps,
-} from "./SkillComponents/InfiniteSlidingLoop";
-import { SkillChip, SkillChipProps } from "./SkillComponents/SkillChip";
-import { SkillSection } from "./SkillComponents/SkillSection";
-import { Tag, TagProps } from "./ProjectComponents/Tag";
-import { ProjectItem, ProjectItemProps } from "./ProjectComponents/ProjectItem";
-import { ProjectSection } from "./ProjectComponents/ProjectSection";
-import {
-	ExperienceItem,
-	ExperienceItemProps,
-} from "./ExperienceComponents/ExperienceItem";
-import { ExperienceSection } from "./ExperienceComponents/ExperienceSection";
-import {
-	ReferrerCard,
-	ReferrerCardProps,
-} from "./ReferrerComponents/ReferrerCard";
-import { ReferrerSection } from "./ReferrerComponents/ReferrerSection";
-import { FooterSection } from "./FooterSection";
+export * from "./ExperienceComponents";
+export * from "./ProjectComponents";
+export * from "./ReferrerComponents";
+export * from "./SkillComponents";
 
-import { Icon, IconProps } from "./Icon";
-import { IconLink, IconLinkProps } from "./IconLink";
-
-export {
-	socialLinks,
-	TopBar,
-	HeroSection,
-	InfiniteSlidingLoop,
-	SkillChip,
-	SkillSection,
-	Tag,
-	ProjectItem,
-	ProjectSection,
-	ExperienceItem,
-	ExperienceSection,
-	ReferrerCard,
-	ReferrerSection,
-	FooterSection,
-	Icon,
-	IconLink,
-};
-export type {
-	InfiniteSlidingLoopProps,
-	SkillChipProps,
-	TagProps,
-	ProjectItemProps,
-	ExperienceItemProps,
-	ReferrerCardProps,
-	IconProps,
-	IconLinkProps,
-};
+export * from "./FooterSection";
+export * from "./HeroSection";
+export * from "./Icon";
+export * from "./IconLink";
+export * from "./Tag";
+export * from "./TopBar";
