@@ -1,7 +1,7 @@
 export type LinkObject = {
 	id: string;
 	href: string;
-	icon: "github" | "figma" | "web" | "linkedin" | "drive";
+	icon: string;
 	tooltip?: string;
 	label?: string;
 };

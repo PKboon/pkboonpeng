@@ -35,18 +35,19 @@ export function ReferrerCard({ referrer, children }: ReferrerCardProps) {
 					{children}
 				</Text>
 
-				<div className="flex justify-end items-center gap-.5">
-					<span className="font-bold text-xs text-primary-200 opacity-30">
+				<div className="flex justify-end items-center gap-1">
+					<span className="font-bold text-sm text-primary-200 opacity-30">
 						Read more on{" "}
 					</span>
 					<IconLink
 						link={{
 							id: `link${referrer.id}`,
 							href: "https://www.linkedin.com/in/pkboon/",
-							icon: "linkedin",
+							icon: "mdi:linkedin",
 							tooltip: "Go to Linkedin",
 						}}
 						className="text-primary-200 opacity-40 w-8 h-8"
+						iconSize="1.75rem"
 					/>
 				</div>
 			</Card>

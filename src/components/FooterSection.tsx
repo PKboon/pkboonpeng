@@ -43,12 +43,13 @@ export function FooterSection() {
 							>
 								View full resume
 							</Anchor>
-							<Flex className="self-center md:self-start -ms-1.5">
+							<Flex className="self-center md:self-start -ms-1.5 gap-1">
 								{socialLinks.map((link) => (
 									<IconLink
+										key={link.id}
 										link={link}
 										className="text-primary-800 hover:text-primary-800"
-										key={link.id}
+										iconSize="2rem"
 									/>
 								))}
 							</Flex>

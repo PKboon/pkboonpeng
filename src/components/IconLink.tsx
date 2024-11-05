@@ -1,15 +1,17 @@
 import { ActionIcon, ActionIconProps, Tooltip } from "@mantine/core";
-import { Icon } from "@/components";
+import { Icon } from "@iconify/react";
 import { LinkObject } from "@/types";
 
 export type IconLinkProps = {
 	link: LinkObject;
 	iconClasses?: string;
+	iconSize?: string;
 };
 
 export function IconLink({
 	link,
 	iconClasses,
+	iconSize,
 	...props
 }: IconLinkProps & ActionIconProps) {
 	return (
@@ -22,7 +24,11 @@ export function IconLink({
 					target="_blank"
 					{...props}
 				>
-					<Icon name={link.icon} className={iconClasses} />
+					<Icon
+						icon={link.icon}
+						className={iconClasses}
+						style={{ fontSize: iconSize }}
+					/>
 				</ActionIcon>
 			</Tooltip>
 		</>

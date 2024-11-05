@@ -3,13 +3,13 @@ export const socialLinks: LinkObject[] = [
 	{
 		id: "social1",
 		href: "https://github.com/PKboon/",
-		icon: "github",
+		icon: "mdi:github",
 		tooltip: "Go to GitHub",
 	},
 	{
 		id: "social2",
 		href: "https://www.linkedin.com/in/pkboon/",
-		icon: "linkedin",
+		icon: "mdi:linkedin",
 		tooltip: "Go to LinkedIn",
 	},
 ];
@@ -21,7 +21,6 @@ export * from "./SkillComponents";
 
 export * from "./FooterSection";
 export * from "./HeroSection";
-export * from "./Icon";
 export * from "./IconLink";
 export * from "./Tag";
 export * from "./TopBar";

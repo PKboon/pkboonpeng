@@ -26,18 +26,19 @@ export function ProjectItem({
 			>
 				{project.name}
 			</Title>
-			<Group className="w-fix">
+			<Group className="w-fix gap-3 my-2">
 				{project.links.map((link) => (
 					<IconLink
 						link={link}
-						key={link.id}
+						key={`${project.id}${link.id}`}
 						iconClasses="text-accent-5"
+						iconSize="2rem"
 					/>
 				))}
 			</Group>
 			<Group className="max-w-[18.125rem] gap-x-2 gap-y-1.5 flex justify-center">
 				{project.tags.map((tag) => (
-					<Tag tag={tag} key={tag.id} />
+					<Tag tag={tag} key={`${project.id}${tag.id}`} />
 				))}
 			</Group>
 		</div>

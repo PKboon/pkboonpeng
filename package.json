@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@iconify/react": "^5.0.2",
 		"@mantine/core": "^7.12.2",
 		"@mantine/hooks": "^7.12.2",
 		"next": "14.2.5",
