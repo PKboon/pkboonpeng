@@ -13,7 +13,7 @@ export function ReferrerCard({ referrer, children }: ReferrerCardProps) {
 			<Card className="gap-2.5 w-96 h-fit bg-primary-750" radius="lg">
 				<Flex align="start" className="gap-2">
 					<Avatar
-						src={referrer.image}
+						src={`/images/people/${referrer.image}`}
 						alt={referrer.name}
 						className="min-w-[4.5rem] min-h-[4.5rem] rounded-full"
 					/>

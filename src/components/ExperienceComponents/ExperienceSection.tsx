@@ -8,7 +8,7 @@ export function ExperienceSection() {
 	const experience: ExperienceObject[] = [
 		{
 			id: "experience1",
-			logo: "/images/chim.png",
+			logo: "/chim.png",
 			company: "Chim Media",
 			companyNote: "(startup)",
 			location: "New York, NY - Remote (Part-time)",
@@ -18,7 +18,7 @@ export function ExperienceSection() {
 		},
 		{
 			id: "experience2",
-			logo: "/images/plum.png",
+			logo: "/plum.png",
 			company: "Plum Voice",
 			location: "Boston, MA - Hybrid",
 			position: "Junior Front End Web Developer",
@@ -27,7 +27,7 @@ export function ExperienceSection() {
 		},
 		{
 			id: "experience3",
-			logo: "/images/sharpen.png",
+			logo: "/sharpen.png",
 			company: "Sharpen",
 			companyNote: "(formerly Plum Voice)",
 			location: "Indianapolis, IN - Remote",
@@ -37,7 +37,7 @@ export function ExperienceSection() {
 		},
 		{
 			id: "experience4",
-			logo: "/images/interpro.png",
+			logo: "/interpro.png",
 			company: "InterPro Solutions",
 			location: "Stoneham, MA - Hybrid",
 			position: "Front-end Software Engineer",

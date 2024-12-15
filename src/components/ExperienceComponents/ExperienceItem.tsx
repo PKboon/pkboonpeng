@@ -13,7 +13,7 @@ export function ExperienceItem({ children, experience }: ExperienceItemProps) {
 		<Timeline.Item
 			bullet={
 				<Image
-					src={experience.logo}
+					src={`/images/companies${experience.logo}`}
 					alt={experience.company}
 					className="p-2"
 				/>

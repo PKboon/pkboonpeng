@@ -11,7 +11,7 @@ export function ReferrerSection() {
 			name: "Mychal Chin",
 			position: "VP of Professional Services at Sharpen",
 			relationship: "June 17, 2024, Mychal managed PK directly",
-			image: "https://media.licdn.com/dms/image/v2/C4D03AQEadOVNPiu-aw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1593538969915?e=1731542400&v=beta&t=or9JZEsCA-i84UnLrPu0lVeDx27PZRSgxJ_R5jsxc00",
+			image: "/mike.jpeg",
 			recommendation: `I met PK in early 2021, when she interviewed for an internship at Plum Voice. After her interview it was a unanimous decision, we all wanted to offer her the position on the spot. At the time, PK didn't have any familiarity with our technology stack, but she had a strong work ethic and was highly organized. She excelled on all individual projects we assigned her and played key roles on team projects. Her performance as an intern was so strong, we created a position to hire her when the company wasn't ordinarily looking to hire.
 			
 				As a full time team member, PK took ownership of several internal applications, including tools used by our Development and Support teams. Her early roles were more front-end focused, but she reached out an expressed as desire to take on more back-end responsibilities, with a desire of becoming a more complete engineer. PK was always great about asking for the information she needed to complete her tasks. When I had the opportunity to manage her directly, I appreciated her ability to tell me directly what she needed from me.
@@ -35,7 +35,7 @@ export function ReferrerSection() {
 			name: "Ian Hovde",
 			position: "Software Engineering Team Lead at Sharpen",
 			relationship: "March 17, 2024, Ian was senior to PK",
-			image: "https://media.licdn.com/dms/image/v2/D4E03AQE3MA17l51Z8A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1697827789632?e=1731542400&v=beta&t=pPKphpFfNjO1qbRcHKRZeHZ1TMjowudK_R3qk-MOj0U",
+			image: "ian.jpeg",
 			recommendation: `I have had the pleasure of working alongside PK for over 3 years and I can confidently say that she is an exceptional Software Engineer with remarkable talent for both frontend and backend development.
 			
 				PK is a true expert in frontend development, demonstrating an unparalleled proficiency in crafting user interfaces that are not only visually stunning but also highly functional. Her keen eye for design and understanding of UI/UX principles have greatly contributed to the success of our projects.
@@ -52,7 +52,7 @@ export function ReferrerSection() {
 			name: "Ningxin Li",
 			position: "Lead UI/UX at Sharpen",
 			relationship: "February 29, 2024, Ningxin was senior to PK",
-			image: "https://media.licdn.com/dms/image/v2/C4E03AQF-3GcQR8CxVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1656097858003?e=1731542400&v=beta&t=1_0AXXL_Y8QYzuPz8OYnA9GlxNf1bKGSjvrpFLGD_K0",
+			image: "ningxin.jpeg",
 			recommendation: `I highly recommend PK as an exceptional professional and teammate. Having started as my intern, she quickly proved to be the best I've ever had. PK possesses solid full stack skills, showcasing a remarkable ability to learn and adapt swiftly. Her proactive approach to problem-solving, evident in her self-learning of tools like Figma, has significantly contributed to our team's success.
 			
 				One of PK's standout qualities is her resourcefulness. When faced with unfamiliar challenges, she takes the initiative to independently acquire the necessary skills very fast. Her initiative extends beyond individual growth, as she played a pivotal role in making a whole design system in a very short time, showcasing her leadership and innovation.
@@ -65,7 +65,7 @@ export function ReferrerSection() {
 			name: "RJ Burnham",
 			position: "Founder & CEO at Consig AI | Geek, Builder, and Advisor",
 			relationship: "February 25, 2024, RJ was senior to PK",
-			image: "https://media.licdn.com/dms/image/v2/D4D03AQEWgrXm60jYnA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1669043579317?e=1731542400&v=beta&t=cOFF2UAwKGwfWI7yBFk9MnjYg2sR5N-ZYi3rcgYxlz4",
+			image: "rj.png",
 			recommendation: `I had the distinct pleasure of working with PK Boonpeng at Plum Voice, where I joined as President and CTO. Despite being one of the newer members of our team, PK immediately stood out due to her remarkable eagerness to learn and proactive approach in contributing to various projects.
 
 				PK possesses a rare and invaluable blend of skills that make her a quintessential full-stack developer. Her keen eye for front-end design is nothing short of amazing, seamlessly blending aesthetics with user experience. She has an intuitive understanding of how to make interfaces engaging and accessible. During my tenure, I was particularly impressed with her transition into back-end development, where she exhibited the same level of competence and dedication.
@@ -82,7 +82,7 @@ export function ReferrerSection() {
 			name: "Andreea Olea",
 			position: "Technology Leader | Gen-AI Nerd",
 			relationship: "February 23, 2024, Andreea was senior to PK",
-			image: "https://media.licdn.com/dms/image/v2/D4E03AQHAvLYqied0OQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718233000849?e=1731542400&v=beta&t=zoBUIVeIO3oUJS3W4Zn-9Dzsa-c_ZoHN8AasITA5llo",
+			image: "andreea.png",
 			recommendation: `It has been a privilege to watch PK's remarkable career growth over the past couple years, as she quickly moved beyond the expectations of her role as an intern and then front-end dev, into a well-rounded, high-impact software engineer capacity. PK's unique blend of skills, eagerness to learn, and commitment to excellence has made her an indispensable member of our team.
 
 				What stands out most about PK is her ability to lead by example. She's not just a developer; she's a pioneer who set the bar high for front-end excellence across our organization. Her leadership in creating a comprehensive UI/UX Design System transformed our approaches to development, ensuring consistency and enhancing efficiency across all teams. This initiative alone speaks volumes of her vision and ability to drive change.
@@ -100,7 +100,7 @@ export function ReferrerSection() {
 			position:
 				"Director of Product Development at Raxia | UI/UX Development",
 			relationship: "April 7, 2023, Lindsey managed PK directly",
-			image: "https://media.licdn.com/dms/image/v2/C4D03AQGFR93LLFNPIw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516764622046?e=1731542400&v=beta&t=wxt9av6XqkEhVCp27oXGgmBIRztugtyBVakDwxjuZTU",
+			image: "lindsey.jpeg",
 			recommendation: `PK is a rising star in the development world. Her job title may be Junior Front-end Developer, but her skills and proven ability is much more than that. As her supervisor, I have had the privilege of witnessing her growth and development firsthand, and I can confidently say that she is an invaluable asset to the team.
 
 				One of PK's greatest strengths is her intelligence. She consistently demonstrates an exceptional ability to analyze complex problems and develop creative solutions. Her insights and recommendations have been instrumental in driving many of Plum’s projects forward.
