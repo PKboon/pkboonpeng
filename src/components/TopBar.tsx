@@ -1,7 +1,7 @@
 "use client";
 
 import { Anchor, Button, Flex, Tooltip } from "@mantine/core";
-import { IconLink, socialLinks } from "@/components";
+import { IconLink, RESUME_LINK, SOCIAL_LINKS } from "@/components";
 
 export function TopBar() {
 	return (
@@ -30,7 +30,7 @@ export function TopBar() {
 			</Tooltip>
 
 			<Flex align="center">
-				{socialLinks.map((link) => (
+				{SOCIAL_LINKS.map((link) => (
 					<IconLink
 						key={link.id}
 						link={link}
@@ -42,7 +42,7 @@ export function TopBar() {
 					<Button
 						component="a"
 						target="_blank"
-						href="https://drive.google.com/file/d/1Lq1UxBjXTS7jID9nc8qRVk8T3MhcJTnG/view?usp=sharing"
+						href={RESUME_LINK}
 						className="text-sm text-primary-800 hover:text-primary-800 px-1.5 leading-none h-[1.3125rem] ms-1 bg-primary-400 hover:bg-primary-400"
 					>
 						<strong>Resume</strong>

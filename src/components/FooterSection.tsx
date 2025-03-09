@@ -1,4 +1,4 @@
-import { IconLink, socialLinks } from "@/components";
+import { IconLink, RESUME_LINK, SOCIAL_LINKS } from "@/components";
 import { Anchor, Flex, Title } from "@mantine/core";
 
 export function FooterSection() {
@@ -38,13 +38,13 @@ export function FooterSection() {
 							<Anchor
 								underline="never"
 								target="_blank"
-								href="https://drive.google.com/file/d/1Lq1UxBjXTS7jID9nc8qRVk8T3MhcJTnG/view?usp=sharing"
+								href={RESUME_LINK}
 								className="text-primary-800 text-lg font-semibold"
 							>
 								View full resume
 							</Anchor>
 							<Flex className="self-center md:self-start -ms-1.5 gap-1">
-								{socialLinks.map((link) => (
+								{SOCIAL_LINKS.map((link) => (
 									<IconLink
 										key={link.id}
 										link={link}

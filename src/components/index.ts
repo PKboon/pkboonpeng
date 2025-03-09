@@ -1,5 +1,5 @@
 import { LinkObject } from "@/types";
-export const socialLinks: LinkObject[] = [
+export const SOCIAL_LINKS: LinkObject[] = [
 	{
 		id: "social1",
 		href: "https://github.com/PKboon/",
@@ -13,6 +13,8 @@ export const socialLinks: LinkObject[] = [
 		tooltip: "Go to LinkedIn",
 	},
 ];
+export const RESUME_LINK: string =
+	"https://drive.google.com/file/d/1M_LjNDKdWVb1E8qbaCtWJocBkDCxO45o/view?usp=sharing";
 
 export * from "./ExperienceComponents";
 export * from "./ProjectComponents";
