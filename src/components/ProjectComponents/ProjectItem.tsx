@@ -31,7 +31,7 @@ export function ProjectItem({
 					<IconLink
 						link={link}
 						key={`${project.id}${link.id}`}
-						iconClasses="text-accent-5"
+						iconClasses="text-[#fff]"
 						iconSize="2rem"
 					/>
 				))}

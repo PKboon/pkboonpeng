@@ -31,7 +31,7 @@ export function ExperienceSection() {
 			company: "Sharpen",
 			companyNote: "(formerly Plum Voice)",
 			location: "Indianapolis, IN - Remote",
-			position: "Software Engineer II",
+			position: "Software Engineer",
 			period: "Oct 2023 - Mar 2024",
 			website: "https://sharpencx.com/",
 		},
@@ -40,7 +40,7 @@ export function ExperienceSection() {
 			logo: "/interpro.png",
 			company: "InterPro Solutions",
 			location: "Stoneham, MA - Hybrid",
-			position: "Front-end Software Engineer",
+			position: "Software Engineer",
 			period: "Apr 2024 - Present",
 			website: "https://interprosoft.com/",
 		},
@@ -48,7 +48,7 @@ export function ExperienceSection() {
 
 	const renderedHighLightedKey = (key: string) => {
 		return (
-			<Title order={6} className="text-accent-5 text-sm inline">
+			<Title order={6} className="text-accent-5 text-base inline">
 				{key}
 			</Title>
 		);
@@ -67,26 +67,34 @@ export function ExperienceSection() {
 						{renderedHighLightedKey("Angular")}, along with{" "}
 						{renderedHighLightedKey("SCSS")},{" "}
 						{renderedHighLightedKey("Angular Material")} and{" "}
-						{renderedHighLightedKey("Mobiscroll")}, to improve the
-						user interface
+						{renderedHighLightedKey("Mobiscroll")}
 					</span>
 					<Space />
 					<span>
 						- Integrate interactive maps to applications with{" "}
 						{renderedHighLightedKey("ESRI")} and{" "}
-						{renderedHighLightedKey("ArcGIS APIs")}, making
-						geographic data more accessible and easy to export map
-						data
+						{renderedHighLightedKey("ArcGIS APIs")} in{" "}
+						{renderedHighLightedKey("Typescript")} and{" "}
+						{renderedHighLightedKey("Java")} to build a map export{" "}
+						tool and export data in {renderedHighLightedKey("XML")}{" "}
+						format
 					</span>
 					<Space />
 					<span>
-						- Connect user interface with clients&apos; IBM Maximo
+						- Connect Angular apps with clients&apos; IBM Maximo
 						accounts, enabling data integration from their database
 					</span>
 					<Space />
 					<span>
-						- Work with the team to isolate and fix UI and UX
-						issues, helping ensure smooth application performance
+						- Collaborate with team members to{" "}
+						{renderedHighLightedKey("write regression")} testing
+						plans to ensure UI stability in new releases
+					</span>
+					<Space />
+					<span>
+						- Work in an {renderedHighLightedKey("Agile")}{" "}
+						environment, participating in sprints, stand-ups, and
+						code reviews
 					</span>
 				</ExperienceItem>
 				<ExperienceItem experience={experience[2]}>
@@ -105,7 +113,8 @@ export function ExperienceSection() {
 					<span>
 						- Introduced Figma to the company and created a{" "}
 						{renderedHighLightedKey("Design System")} to unify the
-						UI/UX
+						UI/UX, which{" "}
+						{renderedHighLightedKey("reduce design time by 40%")}
 					</span>
 					<Space />
 					<span>
@@ -122,23 +131,17 @@ export function ExperienceSection() {
 					</span>
 					<Space />
 					<span>
-						-{" "}
-						{renderedHighLightedKey(
-							"Designed intuitive UI/UX experiences"
-						)}{" "}
-						for both new and existing products to optimize user
-						interaction
-					</span>
-					<Space />
-					<span>
 						- Developed {renderedHighLightedKey("Playwright")} tests
-						to validate component behavior
+						to automate front-end testing,{" "}
+						{renderedHighLightedKey(
+							"reducing regression test time by 70%"
+						)}
 					</span>
 					<Space />
 					<span>
-						- Reviewed 80+ code repositories to ensure accuracy,
-						structure, and security, enhancing code quality and
-						product efficiency
+						- Participated in {renderedHighLightedKey("Agile")}{" "}
+						sprints, stand-ups, and retrospectives to improve team
+						collaboration
 					</span>
 				</ExperienceItem>
 				<ExperienceItem experience={experience[1]}>
@@ -221,6 +224,12 @@ export function ExperienceSection() {
 						- Built{" "}
 						{renderedHighLightedKey("7 responsive static websites")}{" "}
 						using {renderedHighLightedKey("React")} with the team
+					</span>
+					<Space />
+					<span>
+						- Provided {renderedHighLightedKey("Agile")} enviroment
+						by scheduling weekly team meeting and bi-weekly check-up
+						with each team member
 					</span>
 					<Space />
 					<span>
