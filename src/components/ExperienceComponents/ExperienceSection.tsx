@@ -227,7 +227,7 @@ export function ExperienceSection() {
 					</span>
 					<Space />
 					<span>
-						- Provided {renderedHighLightedKey("Agile")} enviroment
+						- Provided {renderedHighLightedKey("Agile")} environment
 						by scheduling weekly team meeting and bi-weekly check-up
 						with each team member
 					</span>
