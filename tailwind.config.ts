@@ -25,6 +25,7 @@ module.exports = {
 				4: "var(--accent-4)",
 				5: "var(--accent-5)",
 				6: "var(--accent-6)",
+				7: "var(--accent-7)",
 			},
 		},
 	},

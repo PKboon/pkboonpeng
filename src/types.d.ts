@@ -16,7 +16,6 @@ export type ReferrerObject = {
 };
 
 export type SkillObject = {
-	id: string;
 	label: string;
 	type: string;
 };
@@ -41,6 +40,8 @@ export type ExperienceObject = {
 	companyNote?: string;
 	location: string;
 	position: string;
+	skills: string[];
 	period: string;
 	website: string;
+	details: string[];
 };

@@ -1,11 +1,11 @@
 "use client";
 
 import { ExperienceObject } from "@/types";
-import { Group, Space, Timeline, Title } from "@mantine/core";
+import { Group, Timeline } from "@mantine/core";
 import { ExperienceItem } from "@/components";
 
 export function ExperienceSection() {
-	const experience: ExperienceObject[] = [
+	const experiences: ExperienceObject[] = [
 		{
 			id: "experience1",
 			logo: "/chim.png",
@@ -13,8 +13,20 @@ export function ExperienceSection() {
 			companyNote: "(startup)",
 			location: "New York, NY - Remote (Part-time)",
 			position: "Front-end Team Lead",
+			skills: [
+				"Leadership",
+				"Agile",
+				"React",
+				"Responsive Design",
+				"Cross-Functional Teams",
+			],
 			period: "Aug 2020 - Jan 2021",
 			website: "https://www.chimmedia.com/",
+			details: [
+				"Led a front-end team of 5 developers and 2 UX/UI designers in an Agile environment by organizing weekly team meetings and bi-weekly one-on-ones to drive alignment and deliver high-quality web solutions",
+				"Developed 7 responsive static responsive websites using React as part of a team, ensuring mobile-first performance and consistent design",
+				"Collaborated with Marketing and Product teams to gather requirements and ensure timely delivery of websites that met business goals",
+			],
 		},
 		{
 			id: "experience2",
@@ -23,7 +35,27 @@ export function ExperienceSection() {
 			location: "Boston, MA - Hybrid",
 			position: "Junior Front End Web Developer",
 			period: "Jan 2022 - Sep 2023",
+			skills: [
+				"Full-Stack Development",
+				"Vue.js",
+				"RESTful API Integration",
+				"Database Design",
+				"Data Visualization",
+				"Design Systems",
+				"Figma",
+				"Developer Documentation",
+			],
 			website: "https://www.plumvoice.com/",
+			details: [
+				"Led the frontend team to re-design and build a modern UI from scratch within 1 month for an AI-powered voice assistant demo using Figma, Vue.js, JavaScript, Axios, and Laravel, integrating with a FastAPI backend to deliver a polished prototype for enterprise client demos",
+				"Re-designed and shipped a data visualization app in 2 months using Figma, Vue.js, ApexCharts, D3.js, and Mermaid.js to display data table, pie charts, flowcharts, and Sankey diagrams, helping clients gain clearer insights into platform usage and enabling users to easily identify key nodes",
+				"Built the Template Center feature, allowing users to create custom IVR call flows with prebuilt templates tailored to various industries, reducing development time and accelerating deployment",
+				"Developed 6 VXML app templates in 2 weeks using Stripe APIs and PHP, accelerating client onboarding and reducing support requests by providing ready-to-use examples",
+				"Spearheaded the adoption of Figma and created a Design System, using Vue.js, Bootstrap and VitePress, which unified UI/UX across products, streamlined cross-team collaboration, and reduced design and development time by 50%",
+				"Initiated and designed an internal tool with Figma, Vue.js, Laravel, MySQL, and Axios, including a custom database structure with multiple user permissions, enabling support and sales engineer teams to access data without relying on backend developers or directly accessing the database, streamlining workflows and enabling faster customer response times",
+				"Built a responsive login and signup page for Plum Voice using HTML, CSS, Bootstrap, JavaScript, and jQuery, improving usability and aligning with modern UI standards",
+				"Created the first company’s SMS bot demo using Plum SMS APIs, Google Dialogflow, and PHP to showcase functionality to a prospective client, helping initiate conversations for future SMS integration",
+			],
 		},
 		{
 			id: "experience3",
@@ -33,26 +65,47 @@ export function ExperienceSection() {
 			location: "Indianapolis, IN - Remote",
 			position: "Software Engineer",
 			period: "Oct 2023 - Mar 2024",
+			skills: [
+				"React",
+				"Redux Toolkit",
+				"TypeScript",
+				"E2E Testing",
+				"CI/CD",
+				"UI Components (npm)",
+			],
 			website: "https://sharpencx.com/",
+			details: [
+				"Led the design of a Design System and developed it into a reusable front-end UI component library, published as a private npm package using React, TypeScript, Storybook, Bootstrap, and Figma, improving development time across teams by 40%",
+				"Onboarded the front-end team to Figma by delivering training sessions and creating documentation, ensuring ongoing team ownership and better maintenance of design processes",
+				"Developed front-end features for new and existing products using React, Redux Toolkit, React Router, TypeScript, Axios, and the components from the Design System",
+				"Developed automated E2E front-end tests using Playwright, reducing manual regression testing time by 70% and catching bugs before they reached production",
+				"Contributed to feature development and bug fixes in a CI/CD pipeline environment, collaborating with QA and DevOps to ensure stable and efficient deployments",
+			],
 		},
 		{
 			id: "experience4",
-			logo: "/interpro.png",
-			company: "InterPro Solutions",
+			logo: "/naviam.png",
+			company: "Naviam",
+			companyNote: "(formerly InterPro Solutions)",
 			location: "Stoneham, MA - Hybrid",
 			position: "Software Engineer",
 			period: "Apr 2024 - Present",
+			skills: [
+				"Angular",
+				"SCSS",
+				"ESRI/ArcGIS APIs",
+				"UI Regression Testing",
+				"SQL",
+			],
 			website: "https://interprosoft.com/",
+			details: [
+				"Implemented features and resolved bugs in Angular web apps using TypeScript, SCSS, Angular Material, and Mobiscroll to deliver consistent and user-friendly interfaces",
+				"Customize main web application codebase to meet client-specific IBM Maximo configurations by modifying SQL queries and UI elements, enabling integration with their asset management workflows",
+				"Integrate interactive maps with ESRI and ArcGIS APIs using TypeScript and Java, creating a map export tool that enabled users to visualize geographic data from XML data format",
+				"Collaborate with team members to write UI regression test plans, preventing release-blocking bugs and increasing deployment confidence",
+			],
 		},
 	];
-
-	const renderedHighLightedKey = (key: string) => {
-		return (
-			<Title order={6} className="text-accent-5 text-base inline">
-				{key}
-			</Title>
-		);
-	};
 
 	return (
 		<Group id="experience" className="flex flex-col gap-y-14 px-4">
@@ -60,183 +113,12 @@ export function ExperienceSection() {
 				Experience
 			</div>
 			<Timeline bulletSize={56}>
-				<ExperienceItem experience={experience[3]}>
-					<span>
-						- Build and update web apps using{" "}
-						{renderedHighLightedKey("Typescript")},{" "}
-						{renderedHighLightedKey("Angular")}, along with{" "}
-						{renderedHighLightedKey("SCSS")},{" "}
-						{renderedHighLightedKey("Angular Material")} and{" "}
-						{renderedHighLightedKey("Mobiscroll")}
-					</span>
-					<Space />
-					<span>
-						- Integrate interactive maps to applications with{" "}
-						{renderedHighLightedKey("ESRI")} and{" "}
-						{renderedHighLightedKey("ArcGIS APIs")} in{" "}
-						{renderedHighLightedKey("Typescript")} and{" "}
-						{renderedHighLightedKey("Java")} to build a map export{" "}
-						tool and export data in {renderedHighLightedKey("XML")}{" "}
-						format
-					</span>
-					<Space />
-					<span>
-						- Connect Angular apps with clients&apos; IBM Maximo
-						accounts, enabling data integration from their database
-					</span>
-					<Space />
-					<span>
-						- Collaborate with team members to{" "}
-						{renderedHighLightedKey("write regression")} testing
-						plans to ensure UI stability in new releases
-					</span>
-					<Space />
-					<span>
-						- Work in an {renderedHighLightedKey("Agile")}{" "}
-						environment, participating in sprints, stand-ups, and
-						code reviews
-					</span>
-				</ExperienceItem>
-				<ExperienceItem experience={experience[2]}>
-					<span>
-						- Led the front-end team in developing a{" "}
-						{renderedHighLightedKey(
-							"front-end component node package"
-						)}{" "}
-						using {renderedHighLightedKey("Figma")},{" "}
-						{renderedHighLightedKey("React")},{" "}
-						{renderedHighLightedKey("Typescript")},{" "}
-						{renderedHighLightedKey("Storybook")} and{" "}
-						{renderedHighLightedKey("Bootstrap")}
-					</span>
-					<Space />
-					<span>
-						- Introduced Figma to the company and created a{" "}
-						{renderedHighLightedKey("Design System")} to unify the
-						UI/UX, which{" "}
-						{renderedHighLightedKey("reduce design time by 40%")}
-					</span>
-					<Space />
-					<span>
-						- Provided {renderedHighLightedKey("training")} sessions
-						for the front-end team on utilizing Figma for{" "}
-						{renderedHighLightedKey(
-							"building mock-ups and prototypes"
-						)}
-					</span>
-					<Space />
-					<span>
-						- Enhanced existing front-end code for easier
-						maintenance and refining React components
-					</span>
-					<Space />
-					<span>
-						- Developed {renderedHighLightedKey("Playwright")} tests
-						to automate front-end testing,{" "}
-						{renderedHighLightedKey(
-							"reducing regression test time by 70%"
-						)}
-					</span>
-					<Space />
-					<span>
-						- Participated in {renderedHighLightedKey("Agile")}{" "}
-						sprints, stand-ups, and retrospectives to improve team
-						collaboration
-					</span>
-				</ExperienceItem>
-				<ExperienceItem experience={experience[1]}>
-					<span>
-						- Sustained and enhanced core products and internal tool
-						web apps using {renderedHighLightedKey("Figma")},{" "}
-						{renderedHighLightedKey("Vue.js")},{" "}
-						{renderedHighLightedKey("AngularJS")},{" "}
-						{renderedHighLightedKey("Laravel")},{" "}
-						{renderedHighLightedKey("Axios")}, and{" "}
-						{renderedHighLightedKey("Node.js")}
-					</span>
-					<Space />
-					<span>
-						- {renderedHighLightedKey("Introduced Figma")} and
-						produced a{" "}
-						{renderedHighLightedKey("front-end documentation")} with
-						Vue.js, {renderedHighLightedKey("VitePress")} and Figma
-						for internal company utilization
-					</span>
-					<Space />
-					<span>
-						- Built the internal tool web app by utilizing{" "}
-						{renderedHighLightedKey("Axios")},{" "}
-						{renderedHighLightedKey("MySQL")} and{" "}
-						{renderedHighLightedKey("Laravel")} for permission
-						control and APIs for the customer support team
-					</span>
-					<Space />
-					<span>
-						- Prototyped a Node.js app that connects CPaaS{" "}
-						{renderedHighLightedKey("Jambonz")} and{" "}
-						{renderedHighLightedKey("Dialogflow")} to create an{" "}
-						{renderedHighLightedKey("AI voice application demo")}
-					</span>
-					<Space />
-					<span>
-						- Created an {renderedHighLightedKey("SMS Bot demo")}{" "}
-						using Dialogflow and Plum&apos;s APIs
-					</span>
-					<Space />
-					<span>
-						- Integrated Node.js and{" "}
-						{renderedHighLightedKey("DynamoDB")} to create outbound
-						APIs for a core product and used{" "}
-						{renderedHighLightedKey("Jest")} for testing
-					</span>
-					<Space />
-					<span>
-						- Developed a data analysis Vue.js web app that displays
-						statistical charts using{" "}
-						{renderedHighLightedKey("ApexCharts")},{" "}
-						{renderedHighLightedKey("D3.js")} and{" "}
-						{renderedHighLightedKey("Mermaid.js")}
-					</span>
-					<Space />
-					<span>
-						-{" "}
-						{renderedHighLightedKey("Maintained and reviewed code")}{" "}
-						in 10+ repositories and resolved 170+ issues
-					</span>
-					<Space />
-					<span>
-						- Engaged in {renderedHighLightedKey("Agile")} work
-						environment and sprint activities, which included
-						participation in daily stand-up meetings and weekly code
-						review sessions
-					</span>
-				</ExperienceItem>
-				<ExperienceItem experience={experience[0]}>
-					<span>
-						- Led a group of{" "}
-						{renderedHighLightedKey(
-							"5 developers and 2 UX/UI designers"
-						)}{" "}
-						using {renderedHighLightedKey("Agile")}
-					</span>
-					<Space />
-					<span>
-						- Built{" "}
-						{renderedHighLightedKey("7 responsive static websites")}{" "}
-						using {renderedHighLightedKey("React")} with the team
-					</span>
-					<Space />
-					<span>
-						- Provided {renderedHighLightedKey("Agile")} environment
-						by scheduling weekly team meeting and bi-weekly check-up
-						with each team member
-					</span>
-					<Space />
-					<span>
-						- Collaborated with other departments to deliver the
-						websites
-					</span>
-				</ExperienceItem>
+				{experiences.reverse().map((experience) => (
+					<ExperienceItem
+						key={experience.id}
+						experience={experience}
+					/>
+				))}
 			</Timeline>
 		</Group>
 	);
