@@ -2,24 +2,25 @@
 
 import { ComponentProps, useEffect, useRef } from "react";
 
+export type InfiniteSlidingLoopOptions = {
+	widthProperty: string;
+	speed?: number;
+	direction?: "left" | "right";
+};
+
 export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
-	slidingKeyframeName: string;
-	widthProperty: string;
-	speed: number;
-	direction?: string;
+	options: InfiniteSlidingLoopOptions;
 };
 
 export function InfiniteSlidingLoop({
 	children,
-	slidingKeyframeName,
-	widthProperty,
-	speed = 20,
-	direction = "left",
+	options,
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
 	const contentRef = useRef<HTMLDivElement | null>(null);
+	const widthProperty = `--${options.widthProperty}-width`;
 
 	useEffect(() => {
 		const container = containerRef.current;
@@ -36,16 +37,23 @@ export function InfiniteSlidingLoop({
 
 				// Direction
 				content.style.setProperty(
-					`${widthProperty}`,
-					`${direction === "right" ? "" : "-"}${contentWidth}px`
+					widthProperty,
+					`${
+						options?.direction === "right" ? "" : "-"
+					}${contentWidth}px`
 				);
 
 				// Set up the animation
-				const animationDuration = contentWidth / speed + "s";
-				content.style.animation = `${slidingKeyframeName} ${animationDuration} linear infinite`;
+				const animationDuration =
+					contentWidth / (options.speed ?? 20) + "s";
+				content.style.animationDuration = animationDuration;
+				content.style.setProperty(
+					"--sliding-width",
+					content.style.getPropertyValue(widthProperty)
+				);
 			});
 		}
-	}, [direction, slidingKeyframeName, speed, widthProperty]);
+	}, [options, widthProperty]);
 
 	return (
 		<div
@@ -53,8 +61,8 @@ export function InfiniteSlidingLoop({
 			ref={containerRef}
 		>
 			<div
-				className={`flex absolute ${
-					direction === "right" ? "right-4" : ""
+				className={`sliding-loop flex absolute gap-4 ${
+					options?.direction === "right" ? "right-4" : ""
 				}`}
 				ref={contentRef}
 			>
