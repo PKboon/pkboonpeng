@@ -32,7 +32,7 @@ export function SkillChip({
 	return (
 		<div
 			{...props}
-			className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ms-4 ${className}`}
+			className={`border rounded-full px-6 py-1 leading-7 text-nowrap inline ${className}`}
 			style={{
 				borderColor: styles.color,
 				boxShadow: `${styles.borderGlow} ${styles.color}, inset ${styles.borderGlow} ${styles.color}`,
