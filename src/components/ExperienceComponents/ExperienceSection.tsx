@@ -99,7 +99,7 @@ export function ExperienceSection() {
 			],
 			website: "https://interprosoft.com/",
 			details: [
-				"Implemented features and resolved bugs in Angular web apps using TypeScript, SCSS, Angular Material, and Mobiscroll to deliver consistent and user-friendly interfaces",
+				"Implement features and resolve bugs in Angular web apps using TypeScript, SCSS, Angular Material, and Mobiscroll to deliver consistent and user-friendly interfaces",
 				"Customize main web application codebase to meet client-specific IBM Maximo configurations by modifying SQL queries and UI elements, enabling integration with their asset management workflows",
 				"Integrate interactive maps with ESRI and ArcGIS APIs using TypeScript and Java, creating a map export tool that enabled users to visualize geographic data from XML data format",
 				"Collaborate with team members to write UI regression test plans, preventing release-blocking bugs and increasing deployment confidence",

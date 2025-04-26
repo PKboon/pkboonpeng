@@ -20,19 +20,6 @@ export type SkillObject = {
 	type: string;
 };
 
-export type ProjectObject = {
-	id: string;
-	category: string;
-	name: string;
-	links: LinkObject[];
-	tags: TagObject[];
-};
-
-export type TagObject = {
-	id: string;
-	label: string;
-};
-
 export type ExperienceObject = {
 	id: string;
 	logo: string;
@@ -44,4 +31,23 @@ export type ExperienceObject = {
 	period: string;
 	website: string;
 	details: string[];
+};
+
+export type ProjectObject = {
+	id: string;
+	category: string;
+	name: string;
+	links: LinkObject[];
+	tags: TagObject[];
+};
+
+export type InfiniteSlidingLoopOptions = {
+	widthProperty: string;
+	speed?: number;
+	direction?: "left" | "right";
+};
+
+export type TagObject = {
+	id: string;
+	label: string;
 };

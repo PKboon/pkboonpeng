@@ -1,12 +1,7 @@
 "use client";
 
+import { InfiniteSlidingLoopOptions } from "@/types";
 import { ComponentProps, useEffect, useRef } from "react";
-
-export type InfiniteSlidingLoopOptions = {
-	widthProperty: string;
-	speed?: number;
-	direction?: "left" | "right";
-};
 
 export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
