@@ -28,7 +28,7 @@ export function InfiniteSlidingLoop({
 
 				// Duplicate the content
 				content.innerHTML += content.innerHTML;
-				content.style.width = content.innerHTML;
+				content.style.width = `${contentWidth * 2}px`;
 
 				// Direction
 				content.style.setProperty(
