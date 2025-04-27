@@ -48,32 +48,31 @@ export function SkillSection() {
 		],
 	];
 
-	const rowAnimationDetails: InfiniteSlidingLoopOptions[] = [
+	const rowOptions: InfiniteSlidingLoopOptions[] = [
 		{
-			widthProperty: "skill-row-1",
+			widthProperty: "skills-1",
 			speed: 22,
 		},
 		{
-			widthProperty: "skill-row-2",
+			widthProperty: "skills-2",
 			speed: 17,
 			direction: "right",
 		},
 		{
-			widthProperty: "skill-row-3",
+			widthProperty: "skills-3",
 			speed: 25,
 		},
 	];
-
 	return (
 		<>
 			{rows.map((row, rowIndex) => (
 				<InfiniteSlidingLoop
 					className="h-11"
-					key={`skillrow${rowIndex}`}
-					options={rowAnimationDetails[rowIndex]}
+					key={`skillRow${rowIndex}`}
+					options={rowOptions[rowIndex]}
 				>
 					{[...row, ...row].map((skill, skillIndex) => (
-						<div key={`skill${rowIndex}${skillIndex}`}>
+						<div key={`skill${skillIndex}`}>
 							<SkillChip skill={skill} />
 						</div>
 					))}

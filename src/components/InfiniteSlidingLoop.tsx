@@ -15,6 +15,7 @@ export function InfiniteSlidingLoop({
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
 	const contentRef = useRef<HTMLDivElement | null>(null);
+	const moveToRight = options?.direction === "right";
 
 	useEffect(() => {
 		const container = containerRef.current;
@@ -24,31 +25,35 @@ export function InfiniteSlidingLoop({
 		if (container && content) {
 			// Ensure the browser has updated the layout before manipulating styles
 			requestAnimationFrame(() => {
-				const contentWidth = content.scrollWidth;
+				const originalContentWidth = content.clientWidth;
 
 				// Duplicate the content
 				content.innerHTML += content.innerHTML;
-				content.style.width = `${contentWidth * 2}px`;
+				content.style.width = `${originalContentWidth * 2}px`;
 
 				// Direction
 				content.style.setProperty(
-					widthProperty,
-					`${
-						options?.direction === "right" ? "" : "-"
-					}${contentWidth}px`
+					`${widthProperty}`,
+					`${moveToRight ? "" : "-"}${originalContentWidth}px`
+				);
+				content.style.setProperty(
+					"--sliding-width",
+					`var(${widthProperty})`
 				);
 
 				// Set up the animation
-				const animationDuration =
-					contentWidth / (options.speed ?? 20) + "s";
-				content.style.animationDuration = animationDuration;
-				content.style.setProperty(
-					"--sliding-width",
-					content.style.getPropertyValue(widthProperty)
-				);
+				const animationDuration = `${
+					originalContentWidth / (options.speed ?? 20)
+				}s`;
+				content.style.animation = `sliding-loop ${animationDuration} linear infinite`;
 			});
 		}
-	});
+	}, [
+		moveToRight,
+		options?.direction,
+		options?.speed,
+		options.widthProperty,
+	]);
 
 	return (
 		<div
@@ -57,7 +62,7 @@ export function InfiniteSlidingLoop({
 		>
 			<div
 				className={`sliding-loop flex absolute gap-4 ${
-					options?.direction === "right" ? "right-4" : ""
+					moveToRight ? "right-4" : ""
 				}`}
 				ref={contentRef}
 			>
