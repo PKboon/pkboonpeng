@@ -48,21 +48,18 @@ export function SkillSection() {
 		],
 	];
 
-	const rowDetails: InfiniteSlidingLoopOptions[] = [
+	const rowOptions: InfiniteSlidingLoopOptions[] = [
 		{
-			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skills-1-w",
+			widthProperty: "skills-1",
 			speed: 22,
 		},
 		{
-			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skills-2-w",
+			widthProperty: "skills-2",
 			speed: 17,
 			direction: "right",
 		},
 		{
-			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skills-3-w",
+			widthProperty: "skills-3",
 			speed: 25,
 		},
 	];
@@ -72,7 +69,7 @@ export function SkillSection() {
 				<InfiniteSlidingLoop
 					className="h-11"
 					key={`skillRow${rowIndex}`}
-					options={rowDetails[rowIndex]}
+					options={rowOptions[rowIndex]}
 				>
 					{[...row, ...row].map((skill, skillIndex) => (
 						<div key={`skill${skillIndex}`}>

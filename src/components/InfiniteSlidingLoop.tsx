@@ -20,6 +20,8 @@ export function InfiniteSlidingLoop({
 	useEffect(() => {
 		const container = containerRef.current;
 		const content = contentRef.current;
+		const widthProperty = `--${options.widthProperty}-width`;
+
 		if (container && content) {
 			// Ensure the browser has updated the layout before manipulating styles
 			requestAnimationFrame(() => {
@@ -31,21 +33,27 @@ export function InfiniteSlidingLoop({
 
 				// Direction
 				content.style.setProperty(
-					`${options.widthProperty}`,
+					`${widthProperty}`,
 					`${moveToRight ? "" : "-"}${originalContentWidth}px`
+				);
+				content.style.setProperty(
+					"--sliding-width",
+					`var(${widthProperty})`
 				);
 
 				// Set up the animation
-				content.style.animationDuration = `${
+				const animationDuration = `${
 					originalContentWidth / (options.speed ?? 20)
 				}s`;
-				content.style.setProperty(
-					"--sliding-width",
-					content.style.getPropertyValue(options.widthProperty)
-				);
+				content.style.animation = `sliding-loop ${animationDuration} linear infinite`;
 			});
 		}
-	}, [moveToRight, options]);
+	}, [
+		moveToRight,
+		options?.direction,
+		options?.speed,
+		options.widthProperty,
+	]);
 
 	return (
 		<div
@@ -53,9 +61,9 @@ export function InfiniteSlidingLoop({
 			ref={containerRef}
 		>
 			<div
-				className={`${
-					options.slidingKeyframeName
-				} flex absolute gap-4 ${moveToRight ? "right-4" : ""}`}
+				className={`sliding-loop flex absolute gap-4 ${
+					moveToRight ? "right-4" : ""
+				}`}
 				ref={contentRef}
 			>
 				{children}

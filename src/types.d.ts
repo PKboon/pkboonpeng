@@ -42,7 +42,6 @@ export type ProjectObject = {
 };
 
 export type InfiniteSlidingLoopOptions = {
-	slidingKeyframeName: string;
 	widthProperty: string;
 	speed?: number;
 	direction?: "left" | "right";

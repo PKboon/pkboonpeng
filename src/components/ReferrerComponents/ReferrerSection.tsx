@@ -80,8 +80,7 @@ export function ReferrerSection() {
 		<InfiniteSlidingLoop
 			className="h-[37rem]"
 			options={{
-				slidingKeyframeName: "sliding-loop",
-				widthProperty: "--refs-w",
+				widthProperty: "refs",
 			}}
 		>
 			{referrers.map((referrer) => (
