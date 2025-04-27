@@ -88,26 +88,26 @@ export function ProjectSection() {
 				{ id: "tag5", label: "Storybook" },
 			],
 		},
-		// {
-		// 	id: "project4",
-		// 	category: "Website",
-		// 	name: "Van Renting",
-		// 	links: [
-		// 		{
-		// 			id: "ink1",
-		// 			href: "https://github.com/PKboon/vanRentingWebApp",
-		// 			icon: "mdi:github",
-		// 			tooltip: "View the repo",
-		// 		},
-		// 	],
-		// 	tags: [
-		// 		{ id: "tag1", label: "React" },
-		// 		{ id: "tag2", label: "React Router" },
-		// 		{ id: "tag3", label: "Typescript" },
-		// 		{ id: "tag4", label: "Bootstrap" },
-		// 	],
-		// },
-		{
+		/* {
+			id: "project4",
+			category: "Website",
+			name: "Van Renting",
+			links: [
+				{
+					id: "ink1",
+					href: "https://github.com/PKboon/vanRentingWebApp",
+					icon: "mdi:github",
+					tooltip: "View the repo",
+				},
+			],
+			tags: [
+				{ id: "tag1", label: "React" },
+				{ id: "tag2", label: "React Router" },
+				{ id: "tag3", label: "Typescript" },
+				{ id: "tag4", label: "Bootstrap" },
+			],
+		}, */
+		/* {
 			id: "project5",
 			category: "iOS App",
 			name: "Simple To-do App",
@@ -120,8 +120,8 @@ export function ProjectSection() {
 				},
 			],
 			tags: [{ id: "tag1", label: "SwiftUI" }],
-		},
-		{
+		}, */
+		/* {
 			id: "project6",
 			category: "Email Template",
 			name: "Diversion Newsletter",
@@ -138,7 +138,7 @@ export function ProjectSection() {
 				{ id: "tag2", label: "CSS" },
 				{ id: "tag3", label: "Adobe Photoshop" },
 			],
-		},
+		}, */
 	];
 	return (
 		<Group id="projects" className="flex flex-col gap-y-14">

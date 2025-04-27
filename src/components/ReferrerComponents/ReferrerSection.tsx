@@ -12,7 +12,8 @@ export function ReferrerSection() {
 			relationship: "June 17, 2024, Mychal managed PK directly",
 			image: "/mike.jpeg",
 			recommendation: `I met PK in early 2021, when she interviewed for an internship at Plum Voice. After her interview it was a unanimous decision, we all wanted to offer her the position on the spot. At the time, PK didn't have any familiarity with our technology stack, but she had a strong work ethic and was highly organized. She excelled on all individual projects we assigned her and played key roles on team projects. Her performance as an intern was so strong, we created a position to hire her when the company wasn't ordinarily looking to hire.
-				As a full time team member, PK took ownership of several internal applications, including tools used by our Development and Support teams. Her early roles were more front-end focused, but she reached out an expressed as desire to take on more back-end responsibilities, with a desire of becoming a more complete engineer. PK was always great about asking for the information she needed to complete her tasks. When I had the opportunity to manage her directly, I appreciated her ability to tell me directly what she needed from me.
+				
+			As a full time team member, PK took ownership of several internal applications, including tools used by our Development and Support teams. Her early roles were more front-end focused, but she reached out an expressed as desire to take on more back-end responsibilities, with a desire of becoming a more complete engineer. PK was always great about asking for the information she needed to complete her tasks. When I had the opportunity to manage her directly, I appreciated her ability to tell me directly what she needed from me.
 			`,
 		},
 		{
@@ -22,8 +23,10 @@ export function ReferrerSection() {
 			relationship: "March 17, 2024, Ian was senior to PK",
 			image: "ian.jpeg",
 			recommendation: `I have had the pleasure of working alongside PK for over 3 years and I can confidently say that she is an exceptional Software Engineer with remarkable talent for both frontend and backend development.
-				PK is a true expert in frontend development, demonstrating an unparalleled proficiency in crafting user interfaces that are not only visually stunning but also highly functional. Her keen eye for design and understanding of UI/UX principles have greatly contributed to the success of our projects.
-				What sets PK apart is her relentless drive for excellence. She is a self-starter who continuously seeks out opportunities to expand her skillset and tackle new challenges. Her ability to quickly grasp new concepts and technologies is truly impressive, and she consistently delivers high-quality work at an astonishing speed.
+				
+			PK is a true expert in frontend development, demonstrating an unparalleled proficiency in crafting user interfaces that are not only visually stunning but also highly functional. Her keen eye for design and understanding of UI/UX principles have greatly contributed to the success of our projects.
+				
+			What sets PK apart is her relentless drive for excellence. She is a self-starter who continuously seeks out opportunities to expand her skillset and tackle new challenges. Her ability to quickly grasp new concepts and technologies is truly impressive, and she consistently delivers high-quality work at an astonishing speed.
 			`,
 		},
 		{

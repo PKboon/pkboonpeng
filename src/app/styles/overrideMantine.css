@@ -4,7 +4,7 @@
 }
 
 .mantine-Timeline-item {
-	padding-inline-start: 1.25rem !important;
+	@apply pe-8;
 }
 
 .mantine-Timeline-item::before {

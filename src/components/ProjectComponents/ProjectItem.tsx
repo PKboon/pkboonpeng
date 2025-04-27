@@ -20,12 +20,14 @@ export function ProjectItem({
 			<Title order={6} className="text-xs text-primary-200 w-fit">
 				{project.category}
 			</Title>
+
 			<Title
 				order={5}
 				className="text-2xl text-secondary-400 text-center w-fit"
 			>
 				{project.name}
 			</Title>
+
 			<Group className="w-fix gap-3 my-2">
 				{project.links.map((link) => (
 					<IconLink
@@ -36,6 +38,7 @@ export function ProjectItem({
 					/>
 				))}
 			</Group>
+
 			<Group className="max-w-[18.125rem] gap-x-2 gap-y-1.5 flex justify-center">
 				{project.tags.map((tag) => (
 					<Tag tag={tag} key={`${project.id}${tag.id}`} />
