@@ -1,4 +1,4 @@
-import { InfiniteSlidingLoopOptions, SkillObject } from "@/types";
+import { SkillObject } from "@/types";
 import { InfiniteSlidingLoop, SkillChip } from "@/components";
 
 export function SkillSection() {
@@ -48,32 +48,37 @@ export function SkillSection() {
 		],
 	];
 
-	const rowAnimationDetails: InfiniteSlidingLoopOptions[] = [
+	const rowDetails = [
 		{
-			widthProperty: "skill-row-1",
+			keyframeName: "skill-row-1-sliding",
+			widthProperty: "--skill-row-1-w",
 			speed: 22,
 		},
 		{
-			widthProperty: "skill-row-2",
+			keyframeName: "skill-row-2-sliding",
+			widthProperty: "--skill-row-2-w",
 			speed: 17,
 			direction: "right",
 		},
 		{
-			widthProperty: "skill-row-3",
+			keyframeName: "skill-row-3-sliding",
+			widthProperty: "--skill-row-3-w",
 			speed: 25,
 		},
 	];
-
 	return (
 		<>
 			{rows.map((row, rowIndex) => (
 				<InfiniteSlidingLoop
 					className="h-11"
-					key={`skillrow${rowIndex}`}
-					options={rowAnimationDetails[rowIndex]}
+					key={`skillRow${rowIndex}`}
+					slidingKeyframeName={rowDetails[rowIndex].keyframeName}
+					widthProperty={rowDetails[rowIndex].widthProperty}
+					speed={rowDetails[rowIndex].speed}
+					direction={rowDetails[rowIndex]?.direction}
 				>
 					{[...row, ...row].map((skill, skillIndex) => (
-						<div key={`skill${rowIndex}${skillIndex}`}>
+						<div key={`skill${skillIndex}`}>
 							<SkillChip skill={skill} />
 						</div>
 					))}

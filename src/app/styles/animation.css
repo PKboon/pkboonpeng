@@ -1,14 +1,32 @@
-@keyframes sliding-loop {
+@keyframes skill-row-1-sliding {
 	from {
 		transform: translateX(0);
 	}
 	to {
-		transform: translateX(var(--sliding-width));
+		transform: translateX(var(--skill-row-1-w));
+	}
+}
+
+@keyframes skill-row-2-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--skill-row-2-w));
+	}
+}
+
+@keyframes skill-row-3-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--skill-row-3-w));
 	}
 }
 
 .sliding-loop {
-	animation: sliding-loop linear infinite;
+	animation: skill-row-1-sliding linear infinite;
 	animation-play-state: running;
 }
 

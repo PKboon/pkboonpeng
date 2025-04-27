@@ -1,16 +1,21 @@
 "use client";
 
-import { InfiniteSlidingLoopOptions } from "@/types";
 import { ComponentProps, useEffect, useRef } from "react";
 
 export type InfiniteSlidingLoopProps = {
 	children: React.ReactNode;
-	options: InfiniteSlidingLoopOptions;
+	slidingKeyframeName: string;
+	widthProperty: string;
+	speed?: number;
+	direction?: string;
 };
 
 export function InfiniteSlidingLoop({
 	children,
-	options,
+	slidingKeyframeName,
+	widthProperty,
+	speed = 20,
+	direction = "left",
 	...props
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
@@ -19,8 +24,6 @@ export function InfiniteSlidingLoop({
 	useEffect(() => {
 		const container = containerRef.current;
 		const content = contentRef.current;
-		const widthProperty = `--${options.widthProperty}-width`;
-
 		if (container && content) {
 			// Ensure the browser has updated the layout before manipulating styles
 			requestAnimationFrame(() => {
@@ -32,23 +35,15 @@ export function InfiniteSlidingLoop({
 
 				// Direction
 				content.style.setProperty(
-					widthProperty,
-					`${
-						options?.direction === "right" ? "" : "-"
-					}${contentWidth}px`
+					`${widthProperty}`,
+					`${direction === "right" ? "" : "-"}${contentWidth}px`
 				);
 
 				// Set up the animation
-				const animationDuration =
-					contentWidth / (options.speed ?? 20) + "s";
-				content.style.animationDuration = animationDuration;
-				content.style.setProperty(
-					"--sliding-width",
-					content.style.getPropertyValue(widthProperty)
-				);
+				content.style.animationDuration = contentWidth / speed + "s";
 			});
 		}
-	});
+	}, [direction, slidingKeyframeName, speed, widthProperty]);
 
 	return (
 		<div
@@ -57,7 +52,7 @@ export function InfiniteSlidingLoop({
 		>
 			<div
 				className={`sliding-loop flex absolute gap-4 ${
-					options?.direction === "right" ? "right-4" : ""
+					direction === "right" ? "right-4" : ""
 				}`}
 				ref={contentRef}
 			>
