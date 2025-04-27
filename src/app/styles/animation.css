@@ -12,6 +12,8 @@
 	animation-play-state: running;
 }
 
-.sliding-loop:hover {
-	animation-play-state: paused;
+@media not(pointer: coarse) {
+	.sliding-loop:hover {
+		animation-play-state: paused;
+	}
 }
