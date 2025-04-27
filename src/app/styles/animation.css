@@ -1,4 +1,24 @@
-@keyframes skill-row-1-sliding {
+@keyframes sliding-loop {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--sliding-width));
+	}
+}
+
+.sliding-loop {
+	animation: sliding-loop linear infinite;
+	animation-play-state: running;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.sliding-loop:hover {
+		animation-play-state: paused;
+	}
+}
+
+/* @keyframes skill-row-1-sliding {
 	from {
 		transform: translateX(0);
 	}
@@ -66,4 +86,4 @@
 	.ref-sliding:hover {
 		animation-play-state: paused;
 	}
-}
+} */
