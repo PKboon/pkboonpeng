@@ -81,7 +81,7 @@ export function ReferrerSection() {
 			className="h-[37rem]"
 			options={{
 				slidingKeyframeName: "sliding-loop",
-				widthProperty: "--ref-w",
+				widthProperty: "--refs-w",
 			}}
 		>
 			{referrers.map((referrer) => (

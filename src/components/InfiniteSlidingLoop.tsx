@@ -23,20 +23,21 @@ export function InfiniteSlidingLoop({
 		if (container && content) {
 			// Ensure the browser has updated the layout before manipulating styles
 			requestAnimationFrame(() => {
-				const contentWidth = content.scrollWidth;
+				const originalContentWidth = content.clientWidth;
 
 				// Duplicate the content
 				content.innerHTML += content.innerHTML;
+				content.style.width = `calc(${content.clientWidth}px * 2 + 1rem)`;
 
 				// Direction
 				content.style.setProperty(
 					`${options.widthProperty}`,
-					`${moveToRight ? "" : "-"}${contentWidth}px`
+					`${moveToRight ? "" : "-"}${originalContentWidth}px`
 				);
 
 				// Set up the animation
 				content.style.animationDuration = `${
-					contentWidth / (options.speed ?? 20)
+					originalContentWidth / (options.speed ?? 20)
 				}s`;
 				content.style.setProperty(
 					"--sliding-width",

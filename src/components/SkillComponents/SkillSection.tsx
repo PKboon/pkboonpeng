@@ -51,18 +51,18 @@ export function SkillSection() {
 	const rowDetails: InfiniteSlidingLoopOptions[] = [
 		{
 			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skill-row-1-w",
+			widthProperty: "--skills-1-w",
 			speed: 22,
 		},
 		{
 			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skill-row-2-w",
+			widthProperty: "--skills-2-w",
 			speed: 17,
 			direction: "right",
 		},
 		{
 			slidingKeyframeName: "sliding-loop",
-			widthProperty: "--skill-row-3-w",
+			widthProperty: "--skills-3-w",
 			speed: 25,
 		},
 	];
