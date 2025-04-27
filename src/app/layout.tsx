@@ -43,6 +43,7 @@ export const metadata: Metadata = {
 		"CICD",
 		"agile development",
 		"web performance optimization",
+		"pkboonpeng",
 	],
 	openGraph: {
 		type: "website",

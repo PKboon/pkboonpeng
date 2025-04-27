@@ -15,11 +15,11 @@ export function InfiniteSlidingLoop({
 }: InfiniteSlidingLoopProps & ComponentProps<"div">) {
 	const containerRef = useRef<HTMLDivElement | null>(null);
 	const contentRef = useRef<HTMLDivElement | null>(null);
-	const widthProperty = `--${options.widthProperty}-width`;
 
 	useEffect(() => {
 		const container = containerRef.current;
 		const content = contentRef.current;
+		const widthProperty = `--${options.widthProperty}-width`;
 
 		if (container && content) {
 			// Ensure the browser has updated the layout before manipulating styles
@@ -48,7 +48,7 @@ export function InfiniteSlidingLoop({
 				);
 			});
 		}
-	}, [options, widthProperty]);
+	});
 
 	return (
 		<div
