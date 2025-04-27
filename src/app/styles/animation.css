@@ -7,13 +7,8 @@
 	}
 }
 
-.sliding-loop {
-	animation: sliding-loop linear infinite;
-	animation-play-state: running;
-}
-
 @media (hover: hover) and (pointer: fine) {
 	.sliding-loop:hover {
-		animation-play-state: paused;
+		animation-play-state: paused !important;
 	}
 }
