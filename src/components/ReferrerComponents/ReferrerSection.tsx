@@ -79,8 +79,8 @@ export function ReferrerSection() {
 	return (
 		<InfiniteSlidingLoop
 			className="h-[37rem]"
-			slidingKeyframeName="skill-row-1-sliding"
-			widthProperty="--refs"
+			slidingKeyframeName="ref-sliding"
+			widthProperty="--ref-w"
 		>
 			{referrers.map((referrer) => (
 				<ReferrerCard referrer={referrer} key={referrer.id}>

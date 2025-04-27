@@ -25,13 +25,45 @@
 	}
 }
 
-.sliding-loop {
-	animation: skill-row-1-sliding linear infinite;
+@keyframes ref-sliding {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--ref-w));
+	}
+}
+
+.skill-row-1-sliding {
+	animation-name: skill-row-1-sliding;
+}
+
+.skill-row-2-sliding {
+	animation-name: skill-row-2-sliding;
+}
+
+.skill-row-3-sliding {
+	animation-name: skill-row-3-sliding;
+}
+
+.ref-sliding {
+	animation-name: ref-sliding;
+}
+
+.skill-row-1-sliding,
+.skill-row-2-sliding,
+.skill-row-3-sliding,
+.ref-sliding {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	animation-play-state: running;
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.sliding-loop:hover {
+	.skill-row-1-sliding:hover,
+	.skill-row-2-sliding:hover,
+	.skill-row-3-sliding:hover,
+	.ref-sliding:hover {
 		animation-play-state: paused;
 	}
 }

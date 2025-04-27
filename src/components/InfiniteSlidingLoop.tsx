@@ -51,7 +51,7 @@ export function InfiniteSlidingLoop({
 			ref={containerRef}
 		>
 			<div
-				className={`sliding-loop flex absolute gap-4 ${
+				className={`${slidingKeyframeName} flex absolute gap-4 ${
 					direction === "right" ? "right-4" : ""
 				}`}
 				ref={contentRef}
