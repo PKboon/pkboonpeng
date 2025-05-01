@@ -14,7 +14,7 @@ export const SOCIAL_LINKS: LinkObject[] = [
 	},
 ];
 export const RESUME_LINK: string =
-	"https://drive.google.com/file/d/1tb2IKsOQ3c9P7y9pALm3IBLQS89Zskjp/view?usp=sharing";
+	"https://drive.google.com/file/d/1ExGPlNba1lfQ9pYhcytzcpMRojkFLg8H/view?usp=sharing";
 
 export * from "./ExperienceComponents";
 export * from "./ProjectComponents";
